@@ -1,0 +1,28 @@
+----------------------------------------------------------------
+Fri Apr 11 09:21:55 CEST 2025:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0196-23ba-05aa-00000b38d2c8 
+on database directory /Users/padrian/.droid6/profiles/1744356115632/db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@277050dc 
+Loaded from file:/Applications/droid-binary-6.7.0-bin/lib/derby-10.13.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=11.0.23+7-LTS-222
+user.dir=/Applications/droid-binary-6.7.0-bin
+os.name=Mac OS X
+os.arch=aarch64
+os.version=14.3.1
+derby.system.home=null
+derby.stream.error.file=/Users/padrian/.droid6/logs/derby.log
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Apr 11 12:25:13 CEST 2025:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a1c0c9fe-0196-23ba-05aa-00000b38d2c8 
+on database directory /Users/padrian/.droid6/profiles/1744367113047/db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@277050dc 
+Loaded from file:/Applications/droid-binary-6.7.0-bin/lib/derby-10.13.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=11.0.23+7-LTS-222
+user.dir=/Applications/droid-binary-6.7.0-bin
+os.name=Mac OS X
+os.arch=aarch64
+os.version=14.3.1
+derby.system.home=null
+derby.stream.error.file=/Users/padrian/.droid6/logs/derby.log
+Database Class Loader started - derby.database.classpath=''
