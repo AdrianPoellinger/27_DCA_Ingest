@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Pfad zur CSV-Datei (bitte anpassen)
-csv_path = "analysis_result.csv"
+csv_path = "/home/jovyan/work/dca-metadataraw/WeingutGantenbein/P_156_2005_Flaesch_Neubau-Erweiterung-Weingut-Gantenbein/CAD_results/analysis_result.csv"
 
 # CSV-Datei einlesen
 df = pd.read_csv(csv_path)
