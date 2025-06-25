@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import os
 
 # Pfad zur CSV-Datei – bitte ggf. anpassen
-csv_path = "/Users/padrian/polybox - Adrian Poellinger (poellinger@arch.ethz.ch)@polybox.ethz.ch/DCA/MetadataRaw/WeingutGantenbein/P_156_2005_Flaesch_Neubau-Erweiterung-Weingut-Gantenbein/CAD_results/analysis_result.csv"
+csv_path = "/home/jovyan/work/dca-metadataraw/WeingutGantenbein/P_156_2005_Flaesch_Neubau-Erweiterung-Weingut-Gantenbein/CAD_results/analysis_result.csv"
 
 # Prüfen, ob die Datei existiert
 if not os.path.exists(csv_path):
