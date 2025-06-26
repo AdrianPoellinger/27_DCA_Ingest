@@ -34,12 +34,12 @@ heatmap_data = heatmap_data.reindex(sorted(heatmap_data.columns), axis=1)
 
 # Heatmap erstellen
 plt.figure(figsize=(16, 6))
-sns.heatmap(heatmap_data, annot=True, fmt='d', cmap='', linewidths=0.5)
+sns.heatmap(heatmap_data, annot=True, fmt='d', cmap='PuRd', linewidths=0.5)
 plt.title("Häufigkeit der 10 häufigsten Formate (2004–2009) nach Monat")
 plt.xlabel("Monat")
 plt.ylabel("Format")
 plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
-plt.savefig("heatmap_top10_formats_by_month_2004_2009.png")
+plt.savefig("../res/heatmap_top10_formats_by_month_2004_2009.png")
 plt.show()
 
