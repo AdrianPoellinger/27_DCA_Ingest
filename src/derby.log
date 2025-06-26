@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Wed Jun 25 12:10:52 GMT 2025:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0197-a6ff-82cf-000003bea6e8 
-on database directory /home/jovyan/.droid6/profiles/1750853452204/db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@55054057 
+Wed Jun 25 15:42:22 GMT 2025:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0197-a7c1-22ac-0000038b2970 
+on database directory /home/jovyan/.droid6/profiles/1750866140740/db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@55054057 
 Loaded from file:/home/jovyan/work/27_DCA_Ingest/src/droid-binary-6.7.0-bin/lib/derby-10.13.1.1.jar
 java.vendor=Ubuntu
 java.runtime.version=11.0.26+4-post-Ubuntu-1ubuntu122.04
