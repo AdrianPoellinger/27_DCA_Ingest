@@ -31,5 +31,5 @@ plt.ylabel("Anzahl Dateien")
 plt.xticks(rotation=45)
 plt.grid(True)
 plt.tight_layout()
-plt.savefig("vectorworks_time_series.png")  # Optional: Speichern als Bild
+plt.savefig("../res/vectorworks_time_series.png")  # Optional: Speichern als Bild
 plt.show()

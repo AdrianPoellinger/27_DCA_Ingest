@@ -37,6 +37,6 @@ plt.xticks(rotation=45)
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
-plt.savefig("top10_formats_2004_2009.png")  # Optional: Speichern als Bild
+plt.savefig("../res/top10_formats_2004_2009.png")  # Optional: Speichern als Bild
 plt.show()
 
