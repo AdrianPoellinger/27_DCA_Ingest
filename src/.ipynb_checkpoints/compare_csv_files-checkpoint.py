@@ -13,15 +13,17 @@ def compare_csv_files(path1, path2, output_dir=None, compare_by='name_size'):
     gemeinsame_name_size = pd.merge(df1, df2, on=['NAME', 'SIZE'], how='inner', suffixes=('_df1', '_df2'))
 
     # Ergebnisse anzeigen
-    print("Übereinstimmungen nach NAME:")
-    print(gemeinsame_namen)
+    #print("Übereinstimmungen nach NAME:")
+    #print(gemeinsame_namen)
 
-    print("\nÜbereinstimmungen nach NAME und SIZE:")
-    print(gemeinsame_name_size)
+    #print("\nÜbereinstimmungen nach NAME und SIZE:")
+    #print(gemeinsame_name_size)
 
     # Optional speichern
-    if output_dir:
-        os.makedirs(output_dir, exist_ok=True)
-        gemeinsame_namen.to_csv(os.path.join(output_dir, "gemeinsame_namen.csv"), index=False)
-        gemeinsame_name_size.to_csv(os.path.join(output_dir, "gemeinsame_name_size.csv"), index=False)
-        print(f"Ergebnisse gespeichert in: {output_dir}")
+    #if output_dir:
+    #    os.makedirs(output_dir, exist_ok=True)
+    #    gemeinsame_namen.to_csv(os.path.join(output_dir, "gemeinsame_namen.csv"), index=False)
+    #    gemeinsame_name_size.to_csv(os.path.join(output_dir, "gemeinsame_name_size.csv"), index=False)
+     #   print(f"Ergebnisse gespeichert in: {output_dir}")
+
+    return gemeinsame_namen, gemeinsame_namen_size
