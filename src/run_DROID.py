@@ -3,7 +3,7 @@ import subprocess
 
 # Define the paths
 droid_script_path = "/home/jovyan/work/27_DCA_Ingest/src/droid-binary-6.7.0-bin/droid.sh"
-dataset_to_analyze = "P_156_2005_Flaesch_Neubau-Erweiterung-Weingut-Gantenbein/CAD"
+dataset_to_analyze = "gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene"
 folder_to_analyze = f"/home/jovyan/work/dca-digitalmaterialcopies/WeingutGantenbein/{dataset_to_analyze}"
 output_folder = f"/home/jovyan/work/dca-metadataraw/WeingutGantenbein/{dataset_to_analyze}_results"
 output_csv_path = f"{output_folder}/analysis_result.csv"
