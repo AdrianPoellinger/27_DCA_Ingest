@@ -1,0 +1,9 @@
+name: droid-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - openjdk=11
+  - pip
+  - pip:
+      - jupyterlab
