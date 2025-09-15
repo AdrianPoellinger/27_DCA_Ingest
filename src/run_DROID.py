@@ -3,9 +3,9 @@ import subprocess
 
 # Define the paths
 droid_script_path = "/home/jovyan/work/27_DCA_Ingest/src/droid-binary-6.7.0-bin/droid.sh"
-dataset_to_analyze = "gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene"
-folder_to_analyze = f"/home/jovyan/work/dca-digitalmaterialcopies/WeingutGantenbein/{dataset_to_analyze}"
-output_folder = f"/home/jovyan/work/dca-metadataraw/WeingutGantenbein/{dataset_to_analyze}_results_hash"
+dataset_to_analyze = "2019_Mulgens-GDrive"
+folder_to_analyze = f"/home/jovyan/work/dcaonnextcloud-500gb/DigitalMaterialCopies/TorAlva/{dataset_to_analyze}"
+output_folder = f"/home/jovyan/work/dca-metadataraw/TorAlva/{dataset_to_analyze}_results_hash"
 output_csv_path = f"{output_folder}/analysis_result_2.csv"
 
 try:
