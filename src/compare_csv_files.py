@@ -10,7 +10,7 @@ def compare_csv_files(path1, path2, output_dir=None, compare_by='name_size'):
     gemeinsame_namen = pd.merge(df1, df2, on='NAME', how='inner', suffixes=('_df1', '_df2'))
 
     # Vergleich nach NAME und SIZE
-    gemeinsame_name_size = pd.merge(df1, df2, on=['NAME', 'SIZE'], how='inner', suffixes=('_df1', '_df2'))
+    gemeinsame_namen_size = pd.merge(df1, df2, on=['NAME', 'SIZE'], how='inner', suffixes=('_df1', '_df2'))
 
     # Ergebnisse anzeigen
     #print("Übereinstimmungen nach NAME:")
