@@ -4,7 +4,7 @@ import subprocess
 home_dir = os.path.expanduser("~")
 base_path = os.path.join(home_dir, "work")
 
-# Dataset-Name
+# Dataset-Name definieren
 dataset_to_analyze = "2104_mockup"
 
 # Pfade definieren
