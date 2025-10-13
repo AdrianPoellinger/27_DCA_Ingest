@@ -9,7 +9,7 @@ dataset_to_analyze = "2104_mockup"
 
 # Pfade definieren
 droid_script_path = os.path.join(base_path, "27_DCA_Ingest/src/droid-binary-6.7.0-bin/droid.sh")
-folder_to_analyze = os.path.join(base_path, f"dcaonnextcloud-500gb/DigitalMaterialCopies/Semiramis/302_V-Zug_Documentation/2104_mockup/{dataset_to_analyze}")
+folder_to_analyze = os.path.join(base_path, f"dcaonnextcloud-500gb/DigitalMaterialCopies/Semiramis/302_V-Zug_Documentation/{dataset_to_analyze}")
 output_folder = os.path.join(base_path, f"dca-metadataraw/Semiramis/{dataset_to_analyze}_results")
 output_csv_path = os.path.join(output_folder, "analysis_result_2.csv")
 
