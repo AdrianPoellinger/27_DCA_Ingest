@@ -467,3 +467,4 @@ def interactive_relation_builder(
     with output_area:
         print(f"Loaded {len(df)} files from CSV")
         print(f"Graph initialized with {len(graph)} triples")
+# Temporary line for code review
