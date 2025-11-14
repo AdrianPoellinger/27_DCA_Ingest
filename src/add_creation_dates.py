@@ -32,12 +32,13 @@ def get_creation_time(file_path):
         file_path (str): Pfad zur Datei
         
     Returns:
-        str: ISO 8601 formatiertes Erstellungsdatum oder None falls nicht verfügbar
+        tuple: (ISO 8601 formatiertes Erstellungsdatum oder None, Methode als String oder None)
+               Methode kann sein: 'st_birthtime', 'st_ctime (Windows)', 'min(st_ctime, st_mtime) (Linux)'
     """
     try:
         # Überprüfe ob Datei existiert
         if not os.path.exists(file_path):
-            return None
+            return None, None
         
         path = Path(file_path)
         
@@ -46,27 +47,31 @@ def get_creation_time(file_path):
         # Auf neueren Systemen: st_birthtime (falls verfügbar)
         
         stat_info = path.stat()
+        method = None
         
         # Versuche st_birthtime zu nutzen (macOS, neuere BSD-Systeme)
         if hasattr(stat_info, 'st_birthtime'):
             creation_time = stat_info.st_birthtime
+            method = 'st_birthtime'
         # Windows nutzt st_ctime als Erstellungszeit
         elif platform.system() == 'Windows':
             creation_time = stat_info.st_ctime
+            method = 'st_ctime (Windows)'
         else:
             # Auf Linux ist das Erstellungsdatum schwierig zu bekommen
             # st_ctime ist hier die Zeit der letzten Metadaten-Änderung
             # Wir nehmen das Minimum von ctime und mtime als best guess
             creation_time = min(stat_info.st_ctime, stat_info.st_mtime)
+            method = 'min(st_ctime, st_mtime) (Linux)'
         
         # Konvertiere zu ISO 8601 Format (wie DROID es verwendet)
         dt = datetime.fromtimestamp(creation_time)
-        return dt.strftime('%Y-%m-%dT%H:%M:%S')
+        return dt.strftime('%Y-%m-%dT%H:%M:%S'), method
         
     except Exception as e:
         # Bei Fehlern None zurückgeben
         print(f"Warnung: Konnte Erstellungsdatum für '{file_path}' nicht ermitteln: {e}")
-        return None
+        return None, None
 
 
 def extract_file_path_from_uri(uri):
@@ -134,6 +139,7 @@ def add_creation_dates_to_csv(input_csv, output_csv=None, file_path_column='FILE
     
     # Ermittle Erstellungsdaten
     creation_dates = []
+    method_stats = {}  # Track which methods were used
     total_files = len(df)
     
     print(f"Ermittle Erstellungsdaten für {total_files} Einträge...")
@@ -149,7 +155,10 @@ def add_creation_dates_to_csv(input_csv, output_csv=None, file_path_column='FILE
         
         # Ermittle Erstellungsdatum
         if file_path:
-            creation_date = get_creation_time(file_path)
+            creation_date, method = get_creation_time(file_path)
+            # Track method usage
+            if method:
+                method_stats[method] = method_stats.get(method, 0) + 1
         else:
             creation_date = None
         
@@ -165,6 +174,13 @@ def add_creation_dates_to_csv(input_csv, output_csv=None, file_path_column='FILE
     # Zähle erfolgreich ermittelte Daten
     valid_dates = sum(1 for d in creation_dates if d is not None)
     print(f"Erstellungsdaten ermittelt: {valid_dates}/{total_files}")
+    
+    # Zeige verwendete Methoden
+    if method_stats:
+        print("\nVerwendete Methoden zur Ermittlung des Erstellungsdatums:")
+        for method, count in sorted(method_stats.items()):
+            percentage = (count / valid_dates * 100) if valid_dates > 0 else 0
+            print(f"  - {method}: {count} Dateien ({percentage:.1f}%)")
     
     # Speichere Ergebnis
     if output_csv:
