@@ -31,7 +31,7 @@ def test_get_creation_time():
     
     try:
         # Get creation time
-        creation_time = get_creation_time(temp_path)
+        creation_time, method = get_creation_time(temp_path)
         
         # Should return a valid ISO 8601 timestamp
         assert creation_time is not None
@@ -40,6 +40,11 @@ def test_get_creation_time():
         # Should match the ISO format YYYY-MM-DDTHH:MM:SS
         datetime.strptime(creation_time, '%Y-%m-%dT%H:%M:%S')
         
+        # Should return a method string
+        assert method is not None
+        assert isinstance(method, str)
+        assert method in ['st_birthtime', 'st_ctime (Windows)', 'min(st_ctime, st_mtime) (Linux)']
+        
     finally:
         # Clean up
         os.unlink(temp_path)
@@ -47,8 +52,9 @@ def test_get_creation_time():
 
 def test_get_creation_time_nonexistent():
     """Test getting creation time for non-existent file."""
-    result = get_creation_time('/path/that/does/not/exist/file.txt')
+    result, method = get_creation_time('/path/that/does/not/exist/file.txt')
     assert result is None
+    assert method is None
 
 
 def test_extract_file_path_from_uri():
@@ -165,6 +171,46 @@ def test_add_creation_dates_with_missing_files():
         assert 'CREATION_DATE' in result_df.columns
         # All values should be NaN/None since files don't exist
         assert result_df['CREATION_DATE'].isna().all()
+
+
+def test_method_statistics_output(capsys):
+    """Test that method statistics are printed correctly."""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        # Create test files
+        file1 = Path(tmpdir) / 'test1.txt'
+        file2 = Path(tmpdir) / 'test2.txt'
+        file1.write_text('test')
+        file2.write_text('test')
+        
+        # Create sample CSV
+        csv_path = Path(tmpdir) / 'test.csv'
+        df = pd.DataFrame({
+            'FILE_PATH': [str(file1), str(file2)],
+            'URI': [f'file:{file1}', f'file:{file2}'],
+            'NAME': ['test1.txt', 'test2.txt']
+        })
+        df.to_csv(csv_path, index=False)
+        
+        # Run the function
+        add_creation_dates_to_csv(
+            input_csv=str(csv_path),
+            output_csv=str(Path(tmpdir) / 'output.csv')
+        )
+        
+        # Capture output
+        captured = capsys.readouterr()
+        
+        # Verify that method statistics are in the output
+        assert 'Verwendete Methoden zur Ermittlung des Erstellungsdatums:' in captured.out
+        # Should show one of the three methods
+        assert any(method in captured.out for method in [
+            'st_birthtime', 
+            'st_ctime (Windows)', 
+            'min(st_ctime, st_mtime) (Linux)'
+        ])
+        # Should show file count and percentage
+        assert '2 Dateien' in captured.out
+        assert '100.0%' in captured.out
 
 
 if __name__ == '__main__':
