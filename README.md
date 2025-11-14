@@ -5,6 +5,7 @@ Digital Collection Analysis and Ingest tools for working with DROID CSV outputs.
 ## Features
 
 - **DROID Analysis**: Run DROID format identification on digital collections
+- **Creation Date Enrichment**: Add file creation dates to DROID CSV outputs (DROID only provides last modified date)
 - **Format Analysis**: Analyze and visualize file formats in collections
 - **CRMdig Relations**: Record semantic relations between files using CRMdigital vocabulary (see [docs/CRMDIG_RELATIONS.md](docs/CRMDIG_RELATIONS.md))
 
@@ -34,7 +35,28 @@ This installs:
 
 ### Jupyter Notebooks
 
-The main analysis workflow is in `notebooks/DCA_Ingest_2025-11-11.ipynb`.
+The main analysis workflow is in `notebooks/DCA_Ingest_2025-11-11.ipynb` or `notebooks/DCA_Ingest_2025-11-11_Keller.ipynb`.
+
+#### Adding File Creation Dates
+
+DROID provides the last modified date but not the creation date. After running DROID analysis, you can enrich the CSV with creation dates:
+
+```python
+from add_creation_dates import add_creation_dates_to_csv
+
+# Enrich DROID output with creation dates
+df = add_creation_dates_to_csv(
+    input_csv="path/to/droid_output.csv",
+    output_csv="path/to/enriched_output.csv"
+)
+```
+
+Or use the command line:
+```bash
+python src/add_creation_dates.py --input droid_output.csv --output enriched_output.csv
+```
+
+#### CRMdig File Relations
 
 To add CRMdig file relations annotation:
 1. Open the notebook
@@ -59,10 +81,12 @@ pytest tests/
 27_DCA_Ingest/
 ├── src/                    # Python modules
 │   ├── crmdig_rdf.py      # CRMdig RDF relations module
+│   ├── add_creation_dates.py  # Add creation dates to DROID CSV
 │   ├── run_DROID.py       # DROID execution
 │   └── analyse_*.py       # Analysis modules
 ├── notebooks/             # Jupyter notebooks
 │   ├── DCA_Ingest_2025-11-11.ipynb
+│   ├── DCA_Ingest_2025-11-11_Keller.ipynb
 │   └── CRMDIG_relations_cell.py
 ├── tests/                 # Unit tests
 ├── docs/                  # Documentation
