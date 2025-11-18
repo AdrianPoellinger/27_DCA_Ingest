@@ -11,19 +11,19 @@ def analyse_format_over_time(csv_path, format_name, output_dir=None, show_plot=T
     df = pd.read_csv(csv_path)
 
     # Zeilen mit dem gewünschten Format filtern
-    filtered_df = df[df['FORMAT_NAME'] == format_name].copy()
+    filtered_df = df[df['creation_iso'] == format_name].copy()
 
-    # Spalte 'LAST_MODIFIED' in datetime umwandeln
-    filtered_df['LAST_MODIFIED'] = pd.to_datetime(filtered_df['LAST_MODIFIED'], errors='coerce')
+    # Spalte 'creation_isoD' in datetime umwandeln
+    filtered_df['creation_iso'] = pd.to_datetime(filtered_df['creation_iso'], errors='coerce')
 
     # Ungültige Datumswerte entfernen
-    filtered_df = filtered_df.dropna(subset=['LAST_MODIFIED'])
+    filtered_df = filtered_df.dropna(subset=['creation_iso'])
 
     # Nach Datum sortieren
-    filtered_df = filtered_df.sort_values('LAST_MODIFIED')
+    filtered_df = filtered_df.sort_values('creation_iso')
 
     # Gruppieren nach Datum und zählen
-    time_series = filtered_df['LAST_MODIFIED'].dt.date.value_counts().sort_index()
+    time_series = filtered_df['creation_iso'].dt.date.value_counts().sort_index()
 
     # Plot erstellen
     plt.figure(figsize=(12, 6))
