@@ -39,6 +39,7 @@ Interactive Usage (in Jupyter):
 
 import os
 import uuid
+import warnings
 import pandas as pd
 from typing import Optional, Dict, List, Union
 from pathlib import Path
@@ -127,7 +128,6 @@ def ensure_uids(
         df = pd.read_csv(csv_path)
     except pd.errors.ParserError as e:
         # If parsing fails, try with on_bad_lines='warn' to skip problematic rows
-        import warnings
         error_msg = str(e)
         print(f"Warning: CSV parsing error detected: {error_msg}")
         print("Attempting to read CSV with problematic lines skipped...")
