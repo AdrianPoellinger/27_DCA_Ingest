@@ -240,6 +240,87 @@ def test_full_workflow():
             os.unlink(csv_path)
 
 
+def test_csv_with_commas_in_fields():
+    """Test that CSV files with commas in data fields are handled correctly."""
+    # Create a CSV with commas in file paths (a common real-world scenario)
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.csv', delete=False) as f:
+        csv_path = f.name
+        # Write CSV content with commas in field values (properly quoted)
+        f.write('FILE_PATH,FORMAT_NAME,LAST_MODIFIED\n')
+        f.write('"/path/with,comma/file1.pdf",PDF,2024-01-01\n')
+        f.write('"/another/path,with,multiple,commas/file2.tiff",TIFF,2024-01-02\n')
+        f.write('/normal/path/file3.jpg,JPEG,2024-01-03\n')
+    
+    try:
+        # Should not raise ParserError
+        df = ensure_uids(
+            csv_path,
+            base_ns="http://example.org",
+            uid_column="uid",
+            inplace=False
+        )
+        
+        # Verify all rows were read correctly
+        assert len(df) == 3
+        assert 'uid' in df.columns
+        assert df['uid'].notna().all()
+        
+        # Verify file paths were preserved correctly (including commas)
+        assert 'comma' in df.iloc[0]['FILE_PATH']
+        assert 'multiple' in df.iloc[1]['FILE_PATH']
+        
+    finally:
+        os.unlink(csv_path)
+
+
+def test_csv_with_unquoted_commas():
+    """Test that CSV files with unquoted commas are handled gracefully."""
+    # Create a CSV with unquoted commas (malformed but real-world scenario)
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.csv', delete=False) as f:
+        csv_path = f.name
+        f.write('FILE_PATH,FORMAT_NAME,LAST_MODIFIED\n')
+        f.write('/path/to/file1.pdf,PDF,2024-01-01\n')
+        # This line has an unquoted comma in the path - should be skipped
+        f.write('/path/with,unquoted,comma/file2.tiff,TIFF,2024-01-02\n')
+        f.write('/normal/path/file3.jpg,JPEG,2024-01-03\n')
+    
+    try:
+        # Should handle the error gracefully and skip the bad line
+        import sys
+        from io import StringIO
+        
+        # Capture stdout to check for warning messages
+        captured_output = StringIO()
+        old_stdout = sys.stdout
+        sys.stdout = captured_output
+        
+        df = ensure_uids(
+            csv_path,
+            base_ns="http://example.org",
+            uid_column="uid",
+            inplace=False
+        )
+        
+        sys.stdout = old_stdout
+        output = captured_output.getvalue()
+        
+        # Should have printed a warning about the problematic line
+        assert 'Warning: CSV parsing error detected' in output
+        assert 'Skipped' in output or 'problematic' in output.lower()
+        
+        # Should have loaded 2 rows (skipping the malformed one)
+        assert len(df) == 2
+        assert 'uid' in df.columns
+        assert df['uid'].notna().all()
+        
+        # Verify the correct rows were loaded
+        assert 'file1.pdf' in df.iloc[0]['FILE_PATH']
+        assert 'file3.jpg' in df.iloc[1]['FILE_PATH']
+        
+    finally:
+        os.unlink(csv_path)
+
+
 if __name__ == '__main__':
     # Run tests
     pytest.main([__file__, '-v'])
