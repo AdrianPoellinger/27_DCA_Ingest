@@ -2,12 +2,12 @@
 CRMdig RDF Module for DROID CSV File Relations
 
 This module provides functionality to load DROID CSV files, generate stable UIDs for files,
-build RDF graphs with file metadata, and record relations between files using the CRMdigital
-(CRMdig) vocabulary.
+build RDF graphs with file metadata, record relations between files using the CRMdigital
+(CRMdig) vocabulary, and validate RDF data against SARI Reference Data Model using SHACL.
 
 Basic Usage (Non-Interactive):
     >>> import pandas as pd
-    >>> from crmdig_rdf import ensure_uids, build_graph_from_dataframe, add_relations_to_graph, save_graph
+    >>> from crmdig_rdf import ensure_uids, build_graph_from_dataframe, add_relations_to_graph, save_graph, validate_with_shacl
     >>> 
     >>> # Ensure stable UIDs exist in CSV
     >>> df = ensure_uids("droid_output.csv", base_ns="http://example.org", uid_column="uid", inplace=True)
@@ -21,6 +21,13 @@ Basic Usage (Non-Interactive):
     ...     {"subject_uid": "def456", "object_uid": "ghi789", "predicate": "derives from", "label": "Original scan"}
     ... ]
     >>> add_relations_to_graph(graph, relations, base_ns="http://example.org")
+    >>> 
+    >>> # Validate graph against SARI SHACL shapes
+    >>> conforms, report_graph, report_text = validate_with_shacl(graph)
+    >>> if conforms:
+    ...     print("Graph is valid according to SARI Reference Data Model")
+    >>> else:
+    ...     print("Validation errors:", report_text)
     >>> 
     >>> # Save graph to file
     >>> save_graph(graph, "relations.ttl", format="turtle")
@@ -294,6 +301,92 @@ def save_graph(graph: Graph, output_path: str, format: str = "turtle") -> None:
     graph.serialize(destination=output_path, format=format)
 
 
+def validate_with_shacl(
+    graph: Graph,
+    shacl_path: Optional[str] = None,
+    base_ns: str = "http://example.org"
+) -> tuple:
+    """
+    Validate RDF graph against SARI Reference Data Model using SHACL shapes.
+    
+    Args:
+        graph: RDF graph to validate
+        shacl_path: Path to SHACL shapes file (uses default SARI shapes if None)
+        base_ns: Base namespace used in the graph (for dynamic shape adjustment)
+        
+    Returns:
+        Tuple of (conforms: bool, report_graph: Graph, report_text: str)
+        - conforms: True if graph validates successfully, False otherwise
+        - report_graph: RDF graph containing validation report
+        - report_text: Human-readable validation report text
+        
+    Raises:
+        ImportError: If pyshacl is not installed
+        FileNotFoundError: If SHACL shapes file not found
+    """
+    try:
+        from pyshacl import validate
+    except ImportError:
+        raise ImportError(
+            "pyshacl is required for SHACL validation. Install with: pip install pyshacl"
+        )
+    
+    # Use default SARI shapes if none provided
+    if shacl_path is None:
+        # Get default SHACL shapes from res/shacl/sari_shapes.ttl
+        module_dir = Path(__file__).parent.parent
+        shacl_path = module_dir / "res" / "shacl" / "sari_shapes.ttl"
+    
+    if not os.path.exists(shacl_path):
+        raise FileNotFoundError(f"SHACL shapes file not found: {shacl_path}")
+    
+    # Load SHACL shapes
+    shacl_graph = Graph()
+    shacl_graph.parse(shacl_path, format="turtle")
+    
+    # Perform validation against SARI Reference Data Model
+    conforms, report_graph, report_text = validate(
+        data_graph=graph,
+        shacl_graph=shacl_graph,
+        inference='rdfs',
+        abort_on_first=False,
+        meta_shacl=False,
+        advanced=True,
+        js=False
+    )
+    
+    return conforms, report_graph, report_text
+
+
+def save_validation_report(
+    report_graph: Graph,
+    report_text: str,
+    output_path: str
+) -> None:
+    """
+    Save SHACL validation report to file.
+    
+    Saves both the RDF report graph (as Turtle) and human-readable text.
+    
+    Args:
+        report_graph: RDF graph containing validation report
+        report_text: Human-readable validation report text
+        output_path: Base path for output files (will create .ttl and .txt)
+    """
+    # Create parent directories
+    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+    
+    # Save RDF report
+    base_path = Path(output_path)
+    ttl_path = base_path.with_suffix('.ttl')
+    report_graph.serialize(destination=str(ttl_path), format='turtle')
+    
+    # Save text report
+    txt_path = base_path.with_suffix('.txt')
+    with open(txt_path, 'w', encoding='utf-8') as f:
+        f.write(report_text)
+
+
 def interactive_relation_builder(
     csv_path: str,
     out_rdf_path: str,
@@ -384,6 +477,11 @@ def interactive_relation_builder(
         button_style='primary'
     )
     
+    validate_button = widgets.Button(
+        description='Validate with SHACL',
+        button_style='info'
+    )
+    
     save_button = widgets.Button(
         description='Save Graph',
         button_style='success'
@@ -437,26 +535,87 @@ def interactive_relation_builder(
                 if rel.get('label'):
                     print(f"    Label: {rel['label']}")
     
-    def on_save_graph(b):
+    def on_validate_graph(b):
         try:
+            status_label.value = 'Validating graph against SARI SHACL shapes...'
+            conforms, report_graph, report_text = validate_with_shacl(graph, base_ns=base_ns)
+            
+            if conforms:
+                status_label.value = '✓ Validation successful! Graph conforms to SARI Reference Data Model'
+                with output_area:
+                    clear_output(wait=True)
+                    print("✓ SHACL Validation: PASSED")
+                    print(f"Total relations: {len(relations_list)}")
+                    print(f"Total triples: {len(graph)}")
+            else:
+                status_label.value = '⚠ Validation issues found - see output area'
+                with output_area:
+                    clear_output(wait=True)
+                    print("⚠ SHACL Validation: ISSUES FOUND\n")
+                    print(report_text)
+                    
+                # Save validation report
+                report_path = Path(out_rdf_path).parent / "validation_report"
+                save_validation_report(report_graph, report_text, str(report_path))
+                with output_area:
+                    print(f"\nValidation report saved to: {report_path}.txt and {report_path}.ttl")
+        except Exception as e:
+            status_label.value = f'Error validating: {str(e)}'
+            with output_area:
+                clear_output(wait=True)
+                print(f"Error during validation: {str(e)}")
+    
+    def on_save_graph(b):
+        """Save graph with validation. Note: validation is performed each time to ensure current state."""
+        try:
+            # Validate before saving (ensures we validate the current state)
+            status_label.value = 'Validating graph before saving...'
+            conforms, report_graph, report_text = validate_with_shacl(graph, base_ns=base_ns)
+            
+            # Save graph regardless of validation result
             save_graph(graph, out_rdf_path, format='turtle')
-            status_label.value = f'Success! Graph saved to {out_rdf_path}'
+            
+            if conforms:
+                status_label.value = f'✓ Success! Graph validated and saved to {out_rdf_path}'
+                with output_area:
+                    clear_output(wait=True)
+                    print(f"✓ Graph saved to: {out_rdf_path}")
+                    print("✓ SHACL validation: PASSED")
+                    print(f"Total relations: {len(relations_list)}")
+                    print(f"Total triples: {len(graph)}")
+            else:
+                status_label.value = f'⚠ Graph saved but has validation issues - see output'
+                with output_area:
+                    clear_output(wait=True)
+                    print(f"Graph saved to: {out_rdf_path}")
+                    print("\n⚠ SHACL Validation: ISSUES FOUND")
+                    print(report_text[:500])  # Show first 500 chars
+                    
+                    # Save validation report
+                    report_path = Path(out_rdf_path).parent / "validation_report"
+                    save_validation_report(report_graph, report_text, str(report_path))
+                    print(f"\nFull validation report: {report_path}.txt")
         except Exception as e:
             status_label.value = f'Error saving: {str(e)}'
+            with output_area:
+                clear_output(wait=True)
+                print(f"Error: {str(e)}")
     
     add_button.on_click(on_add_relation)
+    validate_button.on_click(on_validate_graph)
     save_button.on_click(on_save_graph)
     
     # Layout
     ui = widgets.VBox([
         widgets.HTML("<h3>CRMdig File Relations Builder</h3>"),
         widgets.HTML(f"<p>CSV: {csv_path}<br>Output: {out_rdf_path}</p>"),
+        widgets.HTML("<p><strong>SARI Reference Data Model</strong> - Exports are validated with SHACL shapes</p>"),
         subject_dropdown,
         object_dropdown,
         predicate_dropdown,
         custom_predicate_text,
         label_text,
-        widgets.HBox([add_button, save_button]),
+        widgets.HBox([add_button, validate_button, save_button]),
         status_label,
         output_area
     ])

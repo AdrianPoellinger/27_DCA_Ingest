@@ -8,6 +8,7 @@ Digital Collection Analysis and Ingest tools for working with DROID CSV outputs.
 - **Creation Date Enrichment**: Add file creation dates to DROID CSV outputs (DROID only provides last modified date)
 - **Format Analysis**: Analyze and visualize file formats in collections
 - **CRMdig Relations**: Record semantic relations between files using CRMdigital vocabulary (see [docs/CRMDIG_RELATIONS.md](docs/CRMDIG_RELATIONS.md))
+- **SARI SHACL Validation**: Validate RDF exports against SARI Reference Data Model using SHACL shapes
 
 ## Installation
 
@@ -21,7 +22,7 @@ conda activate combined-env
 
 ### Development Setup
 
-For development work with the CRMdig relations module:
+For development work with the CRMdig relations module and SHACL validation:
 ```bash
 pip install -r requirements-dev.txt
 ```
@@ -29,6 +30,7 @@ pip install -r requirements-dev.txt
 This installs:
 - rdflib (RDF graph manipulation)
 - ipywidgets (interactive Jupyter UI)
+- pyshacl (SHACL validation for SARI Reference Data Model)
 - pytest (testing framework)
 
 ## Usage
@@ -58,10 +60,11 @@ python src/add_creation_dates.py --input droid_output.csv --output enriched_outp
 
 #### CRMdig File Relations
 
-To add CRMdig file relations annotation:
+To add CRMdig file relations annotation with SARI SHACL validation:
 1. Open the notebook
-2. Add a new cell with content from `notebooks/CRMDIG_relations_cell.py`
+2. The last cell already contains the CRMdig relations export with SARI SHACL validation
 3. Run the cell and use the interactive UI or programmatic API
+4. RDF exports are automatically validated against SARI Reference Data Model
 
 See [docs/CRMDIG_RELATIONS.md](docs/CRMDIG_RELATIONS.md) for detailed instructions.
 

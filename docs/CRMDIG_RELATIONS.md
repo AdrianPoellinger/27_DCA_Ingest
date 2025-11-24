@@ -1,12 +1,12 @@
-# CRMdig File Relations Module
+# CRMdig File Relations Module with SARI SHACL Validation
 
 ## Übersicht / Overview
 
 **Deutsch:**
-Dieses Modul ermöglicht es, Beziehungen zwischen Dateien aus DROID CSV-Analysen zu erfassen und als RDF mit CRMdigital (CRMdig) Vokabular zu speichern. Es bietet sowohl eine interaktive Jupyter-Oberfläche als auch eine programmatische API.
+Dieses Modul ermöglicht es, Beziehungen zwischen Dateien aus DROID CSV-Analysen zu erfassen und als RDF mit CRMdigital (CRMdig) Vokabular zu speichern. Es bietet sowohl eine interaktive Jupyter-Oberfläche als auch eine programmatische API. Alle RDF-Exporte werden automatisch gegen das SARI Reference Data Model mit SHACL validiert.
 
 **English:**
-This module enables recording relations between files from DROID CSV analyses and storing them as RDF using CRMdigital (CRMdig) vocabulary. It provides both an interactive Jupyter interface and a programmatic API.
+This module enables recording relations between files from DROID CSV analyses and storing them as RDF using CRMdigital (CRMdig) vocabulary. It provides both an interactive Jupyter interface and a programmatic API. All RDF exports are automatically validated against the SARI Reference Data Model using SHACL.
 
 ---
 
@@ -21,7 +21,7 @@ Installieren Sie die erforderlichen Python-Pakete:
 Install the required Python packages:
 
 ```bash
-pip install rdflib ipywidgets pandas
+pip install rdflib ipywidgets pandas pyshacl
 ```
 
 Oder verwenden Sie die Entwicklungs-Abhängigkeitsdatei:
@@ -170,10 +170,56 @@ Serializes the RDF graph to a file (Turtle, RDF/XML, N-Triples, etc.).
 ### `interactive_relation_builder(csv_path, out_rdf_path, base_ns, uid_column, filepath_column)`
 
 **Deutsch:**
-Startet eine interaktive Jupyter-UI zum Erstellen von Dateibeziehungen.
+Startet eine interaktive Jupyter-UI zum Erstellen von Dateibeziehungen mit integrierter SHACL-Validierung.
 
 **English:**
-Launches an interactive Jupyter UI for creating file relations.
+Launches an interactive Jupyter UI for creating file relations with integrated SHACL validation.
+
+### `validate_with_shacl(graph, shacl_path, base_ns)`
+
+**Deutsch:**
+Validiert einen RDF-Graph gegen SARI Reference Data Model SHACL Shapes.
+
+**English:**
+Validates an RDF graph against SARI Reference Data Model SHACL shapes.
+
+**Returns:**
+- `conforms` (bool): True wenn der Graph den SHACL Shapes entspricht / True if graph conforms to SHACL shapes
+- `report_graph` (Graph): RDF-Graph mit Validierungsbericht / RDF graph with validation report
+- `report_text` (str): Menschenlesbarer Validierungsbericht / Human-readable validation report
+
+### `save_validation_report(report_graph, report_text, output_path)`
+
+**Deutsch:**
+Speichert SHACL-Validierungsbericht als RDF (Turtle) und Text.
+
+**English:**
+Saves SHACL validation report as RDF (Turtle) and text.
+
+---
+
+## SARI Reference Data Model & SHACL Validation
+
+**Deutsch:**
+Das Modul enthält SHACL Shapes für die Validierung von RDF-Daten gemäß dem SARI Reference Data Model. Die Validierung prüft:
+
+- **Pflichtfelder**: Jede Datei muss einen eindeutigen Identifier, Label und Dateipfad haben
+- **Datentypen**: Format-Namen und andere Metadaten müssen korrekte Datentypen haben
+- **Beziehungen**: Relations müssen auf gültige Datei-URIs verweisen
+- **URI-Struktur**: Datei-URIs müssen dem Muster `{base_ns}/file/{uid}` folgen
+- **Zirkuläre Beziehungen**: Dateien können nicht auf sich selbst verweisen
+
+**English:**
+The module includes SHACL shapes for validating RDF data according to the SARI Reference Data Model. The validation checks:
+
+- **Required Fields**: Each file must have a unique identifier, label, and file path
+- **Data Types**: Format names and other metadata must have correct data types
+- **Relations**: Relations must point to valid file URIs
+- **URI Structure**: File URIs must follow the pattern `{base_ns}/file/{uid}`
+- **Circular Relations**: Files cannot reference themselves
+
+**SHACL Shapes Location / Speicherort der SHACL Shapes:**
+`res/shacl/sari_shapes.ttl`
 
 ---
 
