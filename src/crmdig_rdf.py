@@ -344,19 +344,8 @@ def validate_with_shacl(
     shacl_graph = Graph()
     shacl_graph.parse(shacl_path, format="turtle")
     
-    # Add File class type to all file URIs in the data graph if not present
-    # This ensures SHACL shape targets work correctly
-    ns = Namespace(base_ns.rstrip('/') + '/')
-    file_class = ns.File
-    
-    # Find all file URIs (those matching pattern /file/{uid})
-    for s, p, o in graph:
-        if "/file/" in str(s):
-            # Add type triple if not already present
-            if (s, RDF.type, file_class) not in graph:
-                graph.add((s, RDF.type, file_class))
-    
     # Perform validation
+    # SHACL shapes now target nodes with dcterms:identifier (more flexible)
     conforms, report_graph, report_text = validate(
         data_graph=graph,
         shacl_graph=shacl_graph,

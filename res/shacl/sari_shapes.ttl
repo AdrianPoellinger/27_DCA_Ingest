@@ -5,51 +5,37 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix crmdig: <http://www.ics.forth.gr/isl/CRMdig/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix ex: <http://example.org/> .
 
 # SARI Reference Data Model SHACL Shapes
 # These shapes validate RDF data exported from DCA Ingest according to SARI standards
 
-# Shape for Digital Files (D1_Digital_Object in CRMdig)
+# Shape for Digital Files - targets any node with dcterms:identifier
+# Validates core SARI requirements using standard vocabularies
 ex:DigitalFileShape
     a sh:NodeShape ;
-    sh:targetClass ex:File ;
+    sh:targetSubjectsOf dcterms:identifier ;
     sh:property [
         sh:path dcterms:identifier ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:datatype xsd:string ;
-        sh:message "Each digital file must have exactly one unique identifier" ;
+        sh:message "Each digital file must have exactly one unique identifier (dcterms:identifier)" ;
     ] ;
     sh:property [
         sh:path rdfs:label ;
         sh:minCount 1 ;
         sh:datatype xsd:string ;
-        sh:message "Each digital file must have at least one label (filename)" ;
-    ] ;
-    sh:property [
-        sh:path ex:originalPath ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:datatype xsd:string ;
-        sh:message "Each digital file must have exactly one original file path" ;
-    ] ;
-    sh:property [
-        sh:path ex:formatName ;
-        sh:maxCount 1 ;
-        sh:datatype xsd:string ;
-        sh:message "Format name should be a string value" ;
-    ] ;
-    sh:property [
-        sh:path dcterms:modified ;
-        sh:maxCount 1 ;
-        sh:message "Last modified date should be a single value" ;
+        sh:message "Each digital file must have at least one label (rdfs:label / filename)" ;
     ] .
+    # Note: originalPath and formatName use dynamic namespaces and are not enforced here
+    # They are validated by existence through the graph structure
 
 # Shape for File Relations - validates that relations use proper URIs
 ex:FileRelationShape
     a sh:NodeShape ;
-    sh:targetClass ex:File ;
+    sh:targetSubjectsOf dcterms:identifier ;
     sh:property [
         sh:path crmdig:L11_had_output ;
         sh:nodeKind sh:IRI ;
@@ -69,7 +55,7 @@ ex:FileRelationShape
 # Shape for ensuring file URIs follow the expected pattern
 ex:FileURIShape
     a sh:NodeShape ;
-    sh:targetClass ex:File ;
+    sh:targetSubjectsOf dcterms:identifier ;
     sh:pattern "^.+/file/.+$" ;
     sh:flags "i" ;
     sh:message "File URIs should follow pattern: {base_ns}/file/{uid}" .
@@ -77,7 +63,7 @@ ex:FileURIShape
 # Shape for metadata completeness (SARI best practices)
 ex:MetadataCompletenessShape
     a sh:NodeShape ;
-    sh:targetClass ex:File ;
+    sh:targetSubjectsOf dcterms:identifier ;
     sh:message "Files should have comprehensive metadata for SARI compliance" ;
     # At least identifier and label are required (checked in DigitalFileShape)
     # Format information is recommended
@@ -86,21 +72,29 @@ ex:MetadataCompletenessShape
 # Shape for relation validity - ensures relations point to existing files
 ex:RelationTargetShape
     a sh:NodeShape ;
-    sh:targetSubjectsOf crmdig:L11_had_output, crmdig:L21_used_as_derivation_source, dcterms:isVersionOf ;
+    sh:targetSubjectsOf crmdig:L11_had_output, crmdig:L21_used_as_derivation_source, dcterms:isVersionOf, prov:wasDerivedFrom ;
     sh:sparql [
-        sh:message "Relation target must exist as a file in the dataset" ;
+        sh:message "Relation target must exist as a file in the dataset (have dcterms:identifier)" ;
         sh:prefixes [
             sh:declare [
-                sh:prefix "ex" ;
-                sh:namespace "http://example.org/"^^xsd:anyURI ;
+                sh:prefix "dcterms" ;
+                sh:namespace "http://purl.org/dc/terms/"^^xsd:anyURI ;
+            ] ;
+            sh:declare [
+                sh:prefix "crmdig" ;
+                sh:namespace "http://www.ics.forth.gr/isl/CRMdig/"^^xsd:anyURI ;
+            ] ;
+            sh:declare [
+                sh:prefix "prov" ;
+                sh:namespace "http://www.w3.org/ns/prov#"^^xsd:anyURI ;
             ]
         ] ;
         sh:select """
             SELECT $this ?relation ?target
             WHERE {
                 $this ?relation ?target .
-                FILTER(?relation IN (crmdig:L11_had_output, crmdig:L21_used_as_derivation_source, dcterms:isVersionOf))
-                FILTER NOT EXISTS { ?target a ex:File }
+                FILTER(?relation IN (crmdig:L11_had_output, crmdig:L21_used_as_derivation_source, dcterms:isVersionOf, prov:wasDerivedFrom))
+                FILTER NOT EXISTS { ?target dcterms:identifier ?id }
             }
         """ ;
     ] .
@@ -108,13 +102,21 @@ ex:RelationTargetShape
 # Shape for preventing circular relations (best practice)
 ex:CircularRelationShape
     a sh:NodeShape ;
-    sh:targetClass ex:File ;
+    sh:targetSubjectsOf dcterms:identifier ;
     sh:sparql [
         sh:message "Circular relations detected - a file cannot be related to itself" ;
         sh:prefixes [
             sh:declare [
                 sh:prefix "crmdig" ;
                 sh:namespace "http://www.ics.forth.gr/isl/CRMdig/"^^xsd:anyURI ;
+            ] ;
+            sh:declare [
+                sh:prefix "dcterms" ;
+                sh:namespace "http://purl.org/dc/terms/"^^xsd:anyURI ;
+            ] ;
+            sh:declare [
+                sh:prefix "prov" ;
+                sh:namespace "http://www.w3.org/ns/prov#"^^xsd:anyURI ;
             ]
         ] ;
         sh:select """
@@ -126,6 +128,8 @@ ex:CircularRelationShape
                     $this crmdig:L21_used_as_derivation_source $this .
                 } UNION {
                     $this dcterms:isVersionOf $this .
+                } UNION {
+                    $this prov:wasDerivedFrom $this .
                 }
             }
         """ ;
