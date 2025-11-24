@@ -70,6 +70,7 @@ ex:MetadataCompletenessShape
     sh:severity sh:Warning .
 
 # Shape for relation validity - ensures relations point to existing files
+# Targets files that have relations, then validates that relation targets exist
 ex:RelationTargetShape
     a sh:NodeShape ;
     sh:targetSubjectsOf crmdig:L11_had_output, crmdig:L21_used_as_derivation_source, dcterms:isVersionOf, prov:wasDerivedFrom ;

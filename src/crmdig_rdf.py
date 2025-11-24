@@ -344,8 +344,7 @@ def validate_with_shacl(
     shacl_graph = Graph()
     shacl_graph.parse(shacl_path, format="turtle")
     
-    # Perform validation
-    # SHACL shapes now target nodes with dcterms:identifier (more flexible)
+    # Perform validation against SARI Reference Data Model
     conforms, report_graph, report_text = validate(
         data_graph=graph,
         shacl_graph=shacl_graph,
@@ -558,7 +557,8 @@ def interactive_relation_builder(
                 # Save validation report
                 report_path = Path(out_rdf_path).parent / "validation_report"
                 save_validation_report(report_graph, report_text, str(report_path))
-                print(f"\nValidation report saved to: {report_path}.txt and {report_path}.ttl")
+                with output_area:
+                    print(f"\nValidation report saved to: {report_path}.txt and {report_path}.ttl")
         except Exception as e:
             status_label.value = f'Error validating: {str(e)}'
             with output_area:
@@ -566,8 +566,9 @@ def interactive_relation_builder(
                 print(f"Error during validation: {str(e)}")
     
     def on_save_graph(b):
+        """Save graph with validation. Note: validation is performed each time to ensure current state."""
         try:
-            # Validate before saving
+            # Validate before saving (ensures we validate the current state)
             status_label.value = 'Validating graph before saving...'
             conforms, report_graph, report_text = validate_with_shacl(graph, base_ns=base_ns)
             
@@ -590,10 +591,10 @@ def interactive_relation_builder(
                     print("\n⚠ SHACL Validation: ISSUES FOUND")
                     print(report_text[:500])  # Show first 500 chars
                     
-                # Save validation report
-                report_path = Path(out_rdf_path).parent / "validation_report"
-                save_validation_report(report_graph, report_text, str(report_path))
-                print(f"\nFull validation report: {report_path}.txt")
+                    # Save validation report
+                    report_path = Path(out_rdf_path).parent / "validation_report"
+                    save_validation_report(report_graph, report_text, str(report_path))
+                    print(f"\nFull validation report: {report_path}.txt")
         except Exception as e:
             status_label.value = f'Error saving: {str(e)}'
             with output_area:
