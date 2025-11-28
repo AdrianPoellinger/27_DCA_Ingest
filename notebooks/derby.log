@@ -1,14 +1,14 @@
 ----------------------------------------------------------------
-Thu Nov 20 11:52:08 UTC 2025:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-019a-a11b-8b8a-0000009bbfb0 
-on database directory /home/renku/.droid6/profiles/1763639527938/db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@5c29bfd 
+Tue Nov 25 10:45:06 UTC 2025:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-019a-ba9d-f7f7-000000ab6ad8 
+on database directory /home/renku/.droid6/profiles/1764067505732/db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@5c29bfd 
 Loaded from file:/home/renku/work/27_DCA_Ingest/src/droid-binary-6.7.0-bin/lib/derby-10.13.1.1.jar
 java.vendor=Oracle Corporation
 java.runtime.version=11.0.27-internal+0-adhoc..src
 user.dir=/home/renku/work/27_DCA_Ingest/notebooks
 os.name=Linux
 os.arch=amd64
-os.version=5.15.0-1098-azure
+os.version=5.15.0-1096-azure
 derby.system.home=null
 derby.stream.error.file=/home/renku/.droid6/logs/derby.log
 Database Class Loader started - derby.database.classpath=''
