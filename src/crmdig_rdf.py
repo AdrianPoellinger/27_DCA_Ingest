@@ -39,6 +39,7 @@ Interactive Usage (in Jupyter):
 
 import os
 import uuid
+import warnings
 import pandas as pd
 from typing import Optional, Dict, List, Union
 from pathlib import Path
@@ -116,11 +117,37 @@ def ensure_uids(
     Raises:
         FileNotFoundError: If CSV file doesn't exist
         ValueError: If filepath column cannot be determined
+        pd.errors.ParserError: If CSV has malformed rows (with helpful error message)
     """
     if not os.path.exists(csv_path):
         raise FileNotFoundError(f"CSV file not found: {csv_path}")
     
-    df = pd.read_csv(csv_path)
+    # Try to read CSV with robust error handling
+    # First attempt: standard reading
+    try:
+        df = pd.read_csv(csv_path)
+    except pd.errors.ParserError as e:
+        # If parsing fails, try with on_bad_lines='warn' to skip problematic rows
+        error_msg = str(e)
+        print(f"Warning: CSV parsing error detected: {error_msg}")
+        print("Attempting to read CSV with problematic lines skipped...")
+        
+        with warnings.catch_warnings(record=True) as w:
+            warnings.simplefilter("always")
+            try:
+                df = pd.read_csv(csv_path, on_bad_lines='warn')
+                if w:
+                    print(f"\nSkipped {len(w)} problematic line(s) in CSV:")
+                    for warning in w:
+                        print(f"  - {warning.message}")
+                print(f"\nSuccessfully loaded {len(df)} rows from CSV")
+            except Exception as inner_e:
+                raise pd.errors.ParserError(
+                    f"Failed to parse CSV file '{csv_path}'. "
+                    f"The file may contain unescaped commas or special characters in data fields. "
+                    f"Original error: {error_msg}. "
+                    f"Please check the file format, especially around the reported line number."
+                ) from inner_e
     
     # Auto-detect filepath column if not provided
     if filepath_column is None:
