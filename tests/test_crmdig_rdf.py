@@ -7,6 +7,8 @@ These tests verify basic functionality without requiring external DROID CSV file
 import os
 import sys
 import tempfile
+import warnings
+from io import StringIO
 import pandas as pd
 import pytest
 
@@ -238,6 +240,85 @@ def test_full_workflow():
         
         finally:
             os.unlink(csv_path)
+
+
+def test_csv_with_commas_in_fields():
+    """Test that CSV files with commas in data fields are handled correctly."""
+    # Create a CSV with commas in file paths (a common real-world scenario)
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.csv', delete=False) as f:
+        csv_path = f.name
+        # Write CSV content with commas in field values (properly quoted)
+        f.write('FILE_PATH,FORMAT_NAME,LAST_MODIFIED\n')
+        f.write('"/path/with,comma/file1.pdf",PDF,2024-01-01\n')
+        f.write('"/another/path,with,multiple,commas/file2.tiff",TIFF,2024-01-02\n')
+        f.write('/normal/path/file3.jpg,JPEG,2024-01-03\n')
+    
+    try:
+        # Should not raise ParserError
+        df = ensure_uids(
+            csv_path,
+            base_ns="http://example.org",
+            uid_column="uid",
+            inplace=False
+        )
+        
+        # Verify all rows were read correctly
+        assert len(df) == 3
+        assert 'uid' in df.columns
+        assert df['uid'].notna().all()
+        
+        # Verify file paths were preserved correctly (including commas)
+        assert 'comma' in df.iloc[0]['FILE_PATH']
+        assert 'multiple' in df.iloc[1]['FILE_PATH']
+        
+    finally:
+        os.unlink(csv_path)
+
+
+def test_csv_with_unquoted_commas():
+    """Test that CSV files with unquoted commas are handled gracefully."""
+    # Create a CSV with unquoted commas (malformed but real-world scenario)
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.csv', delete=False) as f:
+        csv_path = f.name
+        f.write('FILE_PATH,FORMAT_NAME,LAST_MODIFIED\n')
+        f.write('/path/to/file1.pdf,PDF,2024-01-01\n')
+        # This line has an unquoted comma in the path - should be skipped
+        f.write('/path/with,unquoted,comma/file2.tiff,TIFF,2024-01-02\n')
+        f.write('/normal/path/file3.jpg,JPEG,2024-01-03\n')
+    
+    try:
+        # Capture stdout to verify warnings are printed
+        captured_output = StringIO()
+        old_stdout = sys.stdout
+        sys.stdout = captured_output
+        
+        # Should handle the error gracefully and skip the bad line
+        df = ensure_uids(
+            csv_path,
+            base_ns="http://example.org",
+            uid_column="uid",
+            inplace=False
+        )
+        
+        sys.stdout = old_stdout
+        output = captured_output.getvalue()
+        
+        # Verify that error handling was triggered
+        # The key verification is that we got a DataFrame with the expected number of rows
+        assert len(df) == 2, "Should have loaded 2 valid rows, skipping the malformed one"
+        assert 'uid' in df.columns, "UID column should exist"
+        assert df['uid'].notna().all(), "All UIDs should be non-null"
+        
+        # Verify the correct rows were loaded (the ones without commas in the path)
+        file_paths = df['FILE_PATH'].tolist()
+        assert any('file1.pdf' in fp for fp in file_paths), "Should contain file1.pdf"
+        assert any('file3.jpg' in fp for fp in file_paths), "Should contain file3.jpg"
+        
+        # Verify warning output was generated (less fragile check)
+        assert len(output) > 0, "Should have printed warning/info messages"
+        
+    finally:
+        os.unlink(csv_path)
 
 
 if __name__ == '__main__':
