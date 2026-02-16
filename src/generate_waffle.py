@@ -168,7 +168,7 @@ def generate_waffle_chart(
         )
 
     # Formatnamen als Legende / Labels am rechten Rand
-    label_positions = {fmt: (0.9, 0.9 - i * 0.07) for i, fmt in enumerate(unique_formats)}
+    label_positions = {fmt: (0.1, 0.1 - i * 0.07) for i, fmt in enumerate(unique_formats)}
     for fmt, (x, y) in label_positions.items():
         fig.text(x, y, fmt, color=format_color_map[fmt], fontproperties=regularfont, size=14)
 
