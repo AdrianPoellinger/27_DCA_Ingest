@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 700px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_d89f18a520f1f18a0c95c736f0e77cae29c0465b", "label": "Wasser_dunkel.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fl\u00fcssigkeit/Wasser_dunkel.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_4d96e0aefb434b6aac962086dcf0e4f57601a15d", "label": "fluid07.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid07.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_301a7a04a505ef4f77f28a2325bc639a7ef930f0", "label": "67509540_8e1ce78e56_o.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fl\u00fcssigkeit/67509540_8e1ce78e56_o.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_fafde06787ea37a75659cfcd89a44e052995bf07", "label": "fluid08.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid08.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_c372ae97eff87606a9ba181560cc681a8276f038", "label": "67510212_9abe9ee506_o.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fl\u00fcssigkeit/67510212_9abe9ee506_o.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_a96f57e0cff78404e1ace2664f8318a28dee350c", "label": "fluid09.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid09.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_d956de8e85ebcba108d0ca9526210f638109b579", "label": "trauben.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/trauben.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_59e225e743ff43a894b335d3d2f5186da3994d2b", "label": "trauben_bw.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/trauben_bw.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_3eea00c0303876c27ca536ad3777d65cea80a4c6", "label": "trauben_bw2.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/trauben_bw2.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_6fcb9b8efedc0042595e06f7007edcd34abac5cb", "label": "trauben_logo.psd", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/trauben_logo.psd"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_b4322649282885172a2183e1f21e25c20d6e0949", "label": "trauben_quer_bw2.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/trauben_quer_bw2.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_db9c34e46355dd6cfe707b73cad410fcac01dac9", "label": "fassadenstudien2.indd", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060612_Fassadenstudie/fassadenstudien2.indd"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_0efa4823c2765c23297e0efcb7b904551fc24f13", "label": "060612_fasssade.indd", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060612_Fassadenstudie/060612_fasssade.indd"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_22dd2ee027932426c4c67caa8ca93717564c498a", "label": "fassadenstudien.indd", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_screenshots/fassadenstudien.indd"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_f08f9cd9351dc06e4f9d4af8041a69c8800e10da", "label": "combined_c1.psd", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060612_Fassadenstudie/model/combined_c1.psd"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_589303d6fe39128f2f192ee141312901f665bbb3", "label": "c1.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060612_Fassadenstudie/model/c1.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_51bc4d000431050da5b0fceca283ab95ed3a5e09", "label": "combined_c2.psd", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060612_Fassadenstudie/model/combined_c2.psd"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_ba86c4f8215ed8bf81fe4ffaea84363e3b271ce2", "label": "c2.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060612_Fassadenstudie/model/c2.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_b986be09113d91d5a8c526cd9ce989fe114437b6", "label": "combined_c3.psd", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060612_Fassadenstudie/model/combined_c3.psd"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_91e2c73f3bdee8b8b2f56dffc60b12b834079398", "label": "c3.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060612_Fassadenstudie/model/c3.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_1b3809860888ea12c0e5412c2495342220e148a8", "label": "combined_c4.psd", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060612_Fassadenstudie/model/combined_c4.psd"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_4753d60dcc4fe2169c42ebf928bf4b77f163f124", "label": "c4.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060612_Fassadenstudie/model/c4.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_2b5205a38493a6ca7bd448abe94707be89fe2c51", "label": "v1_6_r0_cam1_2.psd", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/_Archiv/v1_6_r0_cam1_2.psd"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_f4147b2571d3b80730cbf64eed5e9ce3e7572141", "label": "1_6_r0_cam3_4.psd", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/_Archiv/1_6_r0_cam3_4.psd"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_25a041356e953afde46c79a44dbf52ad9452590e", "label": "v1_6_r0_cam2.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/_Archiv/v1_6_r0_cam2.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_8831022323d8615355d4fb80b5ba60d27b95222b", "label": "v1_6_r0_cam3_4.psd", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/_Archiv/v1_6_r0_cam3_4.psd"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_6f8743ceec0fe62f9b3b3e4c5d503a4be7eb9833", "label": "v1_6_r0_cam2_flip.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/_Archiv/v1_6_r0_cam2_flip.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_06e6690a38779f2ecec5a585977680ae80e062e1", "label": "v1_6_r0_cam3.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/_Archiv/v1_6_r0_cam3.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_9d0730a443f7c7e5fc4f4e4a215deca8cb2b58b5", "label": "v1_6_r0_cam4.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/_Archiv/v1_6_r0_cam4.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_b5afa7b762fbc463b8792477b196235745443556", "label": "v1_6_r0_cam4_flip.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/_Archiv/v1_6_r0_cam4_flip.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_8111f9c37b75ff3ec5523bc2692346cb0b70d78c", "label": "v1_8_r3_cam1_simplified.psd", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/Photoshop/v1_8_r3_cam1_simplified.psd"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_8bbbeeec5782b8c1d40122579ba77c4a851375f0", "label": "v1_8_r3_cam1_simplified.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/_Archiv/v1_8_r3_cam1_simplified.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_f4f9143a7ba029603a4902b4c59eb7757a30ac51", "label": "v1_8_r3_cam1_simplified_inv.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/v1_8_r3_cam1_simplified_inv.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_4ddf6a4b9325e36ae6cdb08365053203d78972f5", "label": "v1_8_r3_cam2.psd", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/Photoshop/v1_8_r3_cam2.psd"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_12fc6621ee8d3aa374df7b410908141015bc6d7e", "label": "v1_8_r3_cam2.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/_Archiv/v1_8_r3_cam2.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_fa54be6e56813f4b982baeb5d7ee6f6bcc56bd61", "label": "v1_8_r3_cam2_inv.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/v1_8_r3_cam2_inv.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_9ed0b9367000f86fd43ca1980bb35a16cc1624fd", "label": "v1_8_r3_cam3.psd", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/Photoshop/v1_8_r3_cam3.psd"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_9a19e6a171036ef8994102316dd4e9265a20e44f", "label": "v1_8_r3_cam3_inv.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/_Archiv/v1_8_r3_cam3_inv.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_45295c4b4b81a3cc929105406be93505f7bc3d26", "label": "v1_8_r3_cam3.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/v1_8_r3_cam3.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_101085dc4dcc5db8c8de3af59016de5f0b2788d6", "label": "v1_8_r3_cam4.psd", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/Photoshop/v1_8_r3_cam4.psd"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_778c23cbcfa00c0cf5cbf7d6d3ad466d2866d0c0", "label": "v1_8_r3_cam4_inv.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/_Archiv/v1_8_r3_cam4_inv.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_4a350438686d22620a1107a991d135297a9a6b51", "label": "v1_8_r3_cam4.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/v1_8_r3_cam4.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_e8e3d86402307c42500d5c6f0a72fa42f9e2f3b6", "label": "renderballs_v1_6.psd", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/03_Fassadenansichten/_Archiv/renderballs_v1_6.psd"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_be399170111ac1efe2460861d01eb0cf549f1eda", "label": "Beeren.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/03_Fassadenansichten/_Archiv/Beeren.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_9176a5c60fbce3e24f4094f4c2637d536e953d7e", "label": "060623_Fassaden1.psd", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/03_Fassadenansichten/060623_Fassaden1.psd"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_bc9a625c2ca427ac743a927c206e0fc23866601b", "label": "060623_Fassaden1.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/03_Fassadenansichten/060623_Fassaden1.jpg"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_9a5a078b48f1962b9e0c28bfea2179ca1007e133", "label": "v1_8_r3_compare.psd", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/02_Texturen/_Archiv/v1_8_r3_compare.psd"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_7c394dfc0d6643ce2b05a059ffa0e3a3346fc458", "label": "060623_Fassaden2.psd", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/03_Fassadenansichten/060623_Fassaden2.psd"}, {"color": "#97c2fc", "id": "http://dca.ethz.ch/id/file_9ba8288fc525ffe6a9814150b7c43b252d1b5c34", "label": "060623_Fassaden2.jpg", "shape": "dot", "size": 12, "title": "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/04_Entwurf/060625_FinalDesign/03_Fassadenansichten/060623_Fassaden2.jpg"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "http://dca.ethz.ch/id/file_d89f18a520f1f18a0c95c736f0e77cae29c0465b", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_4d96e0aefb434b6aac962086dcf0e4f57601a15d"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_301a7a04a505ef4f77f28a2325bc639a7ef930f0", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_fafde06787ea37a75659cfcd89a44e052995bf07"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_c372ae97eff87606a9ba181560cc681a8276f038", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_a96f57e0cff78404e1ace2664f8318a28dee350c"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_d956de8e85ebcba108d0ca9526210f638109b579", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_59e225e743ff43a894b335d3d2f5186da3994d2b"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_59e225e743ff43a894b335d3d2f5186da3994d2b", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_3eea00c0303876c27ca536ad3777d65cea80a4c6"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_3eea00c0303876c27ca536ad3777d65cea80a4c6", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_6fcb9b8efedc0042595e06f7007edcd34abac5cb"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_3eea00c0303876c27ca536ad3777d65cea80a4c6", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_b4322649282885172a2183e1f21e25c20d6e0949"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_db9c34e46355dd6cfe707b73cad410fcac01dac9", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_0efa4823c2765c23297e0efcb7b904551fc24f13"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_22dd2ee027932426c4c67caa8ca93717564c498a", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_db9c34e46355dd6cfe707b73cad410fcac01dac9"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_f08f9cd9351dc06e4f9d4af8041a69c8800e10da", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_589303d6fe39128f2f192ee141312901f665bbb3"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_51bc4d000431050da5b0fceca283ab95ed3a5e09", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_ba86c4f8215ed8bf81fe4ffaea84363e3b271ce2"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_b986be09113d91d5a8c526cd9ce989fe114437b6", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_91e2c73f3bdee8b8b2f56dffc60b12b834079398"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_1b3809860888ea12c0e5412c2495342220e148a8", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_4753d60dcc4fe2169c42ebf928bf4b77f163f124"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_2b5205a38493a6ca7bd448abe94707be89fe2c51", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_f4147b2571d3b80730cbf64eed5e9ce3e7572141"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_2b5205a38493a6ca7bd448abe94707be89fe2c51", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_25a041356e953afde46c79a44dbf52ad9452590e"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_2b5205a38493a6ca7bd448abe94707be89fe2c51", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_8831022323d8615355d4fb80b5ba60d27b95222b"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_f4147b2571d3b80730cbf64eed5e9ce3e7572141", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_06e6690a38779f2ecec5a585977680ae80e062e1"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_f4147b2571d3b80730cbf64eed5e9ce3e7572141", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_9d0730a443f7c7e5fc4f4e4a215deca8cb2b58b5"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_25a041356e953afde46c79a44dbf52ad9452590e", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_6f8743ceec0fe62f9b3b3e4c5d503a4be7eb9833"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_9d0730a443f7c7e5fc4f4e4a215deca8cb2b58b5", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_b5afa7b762fbc463b8792477b196235745443556"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_8111f9c37b75ff3ec5523bc2692346cb0b70d78c", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_8bbbeeec5782b8c1d40122579ba77c4a851375f0"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_8111f9c37b75ff3ec5523bc2692346cb0b70d78c", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_f4f9143a7ba029603a4902b4c59eb7757a30ac51"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_8bbbeeec5782b8c1d40122579ba77c4a851375f0", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_9a5a078b48f1962b9e0c28bfea2179ca1007e133"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_4ddf6a4b9325e36ae6cdb08365053203d78972f5", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_12fc6621ee8d3aa374df7b410908141015bc6d7e"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_4ddf6a4b9325e36ae6cdb08365053203d78972f5", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_fa54be6e56813f4b982baeb5d7ee6f6bcc56bd61"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_9ed0b9367000f86fd43ca1980bb35a16cc1624fd", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_9a19e6a171036ef8994102316dd4e9265a20e44f"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_9ed0b9367000f86fd43ca1980bb35a16cc1624fd", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_45295c4b4b81a3cc929105406be93505f7bc3d26"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_101085dc4dcc5db8c8de3af59016de5f0b2788d6", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_778c23cbcfa00c0cf5cbf7d6d3ad466d2866d0c0"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_101085dc4dcc5db8c8de3af59016de5f0b2788d6", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_4a350438686d22620a1107a991d135297a9a6b51"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_e8e3d86402307c42500d5c6f0a72fa42f9e2f3b6", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_be399170111ac1efe2460861d01eb0cf549f1eda"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_9176a5c60fbce3e24f4094f4c2637d536e953d7e", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_bc9a625c2ca427ac743a927c206e0fc23866601b"}, {"arrows": "to", "from": "http://dca.ethz.ch/id/file_7c394dfc0d6643ce2b05a059ffa0e3a3346fc458", "title": "premis:isSourceOf / premis:hasSource", "to": "http://dca.ethz.ch/id/file_9ba8288fc525ffe6a9814150b7c43b252d1b5c34"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
