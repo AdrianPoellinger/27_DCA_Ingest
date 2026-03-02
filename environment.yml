@@ -11,5 +11,3 @@ dependencies:
       - jupyterlab
       - pandas
       - rdflib
-      - pyexiftool
-  - conda-forge::libimage-exiftool-perl
