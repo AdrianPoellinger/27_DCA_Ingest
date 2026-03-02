@@ -9,3 +9,7 @@ dependencies:
   - pip
   - pip:
       - jupyterlab
+      - pandas
+      - rdflib
+      - pyexiftool
+  - conda-forge::libimage-exiftool-perl
