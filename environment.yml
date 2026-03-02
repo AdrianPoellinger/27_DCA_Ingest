@@ -2,9 +2,9 @@
 name: combined-env
 channels:
   - conda-forge
+  - defaults
 dependencies:
   - python=3.10
-  - openjdk=11
   - openjdk=17
   - maven
   - pip
