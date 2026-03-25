@@ -9,5 +9,11 @@ dependencies:
   - pip
   - pip:
       - jupyterlab
+      - ipykernel       # Kernel-Registrierung: python -m ipykernel install --user --name combined-env
+      - ipywidgets      # Notebook-Widgets
       - pandas
+      - matplotlib
+      - seaborn
+      - pywaffle
       - rdflib
+      - networkx        # Provenance-Graphen (optional)

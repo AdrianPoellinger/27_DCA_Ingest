@@ -40,7 +40,7 @@ def analyse_format_over_creation_time_df(df, format_name, date_column="creation_
     # Datumsstrings bereinigen und parsen
     s = filtered_df[date_column].astype(str).str.strip().replace(r'(^nan$)', '', regex=True)
     s = s.str.replace(r'Z$', '', regex=True)
-    parsed = pd.to_datetime(s, errors='coerce', infer_datetime_format=True, utc=True)
+    parsed = pd.to_datetime(s, errors='coerce', utc=True)
     filtered_df['_parsed_dt'] = parsed
 
     nat_count = parsed.isna().sum()
@@ -62,20 +62,38 @@ def analyse_format_over_creation_time_df(df, format_name, date_column="creation_
     if verbose:
         print(time_series.head(10))
 
-    # Plot erstellen
-    plt.figure(figsize=(12,6))
-    plt.plot(time_series.index, time_series.values, marker='o', linestyle='-')
-    plt.title(f"Häufigkeit von '{format_name}'-Dateien über die Zeit (Spalte: {use_column})")
-    plt.xlabel("Datum")
-    plt.ylabel("Anzahl Dateien")
+    # Plot erstellen (Set3-Farbe, schwarzer Hintergrund, weiße Schrift)
+    fig, ax = plt.subplots(figsize=(12, 6), facecolor="black")
+    ax.set_facecolor("black")
+
+    set3_colors = plt.cm.Set3.colors
+    line_color = set3_colors[0]
+    ax.plot(
+        time_series.index,
+        time_series.values,
+        marker="o",
+        linestyle="-",
+        color=line_color,
+        markerfacecolor=line_color,
+        markeredgecolor="white",
+    )
+
+    ax.set_title(f"Häufigkeit von '{format_name}'-Dateien über die Zeit (Spalte: {use_column})", color="white")
+    ax.set_xlabel("Datum", color="white")
+    ax.set_ylabel("Anzahl Dateien", color="white")
+    ax.tick_params(axis="both", colors="white")
     plt.xticks(rotation=45)
-    plt.grid(True)
+
+    for spine in ax.spines.values():
+        spine.set_color("white")
+
+    ax.grid(True, linestyle="--", alpha=0.35, color="white")
     plt.tight_layout()
 
     if output_dir:
         os.makedirs(output_dir, exist_ok=True)
         output_path = os.path.join(output_dir, f"{use_column}_{format_name}_counts.png")
-        plt.savefig(output_path)
+        plt.savefig(output_path, facecolor=fig.get_facecolor(), edgecolor="none")
         if verbose:
             print(f"Plot gespeichert unter: {output_path}")
 
