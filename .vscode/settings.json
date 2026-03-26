@@ -1,0 +1,7 @@
+{
+  "python.defaultInterpreterPath": "/layers/paketo-buildpacks_conda-env-update/conda-env/bin/python",
+  "python.venvPath": "/does/not/exist",
+  "python.venvFolders": [],
+  "python.terminal.activateEnvironment": false
+}
+``
