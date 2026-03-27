@@ -1,6 +1,7 @@
 {
   "python.defaultInterpreterPath": "/layers/paketo-buildpacks_conda-env-update/conda-env/bin/python",
-  "python.venvPath": "/does/not/exist",
+  "python.venvPath": "/home/renku/doesnotexist",
   "python.venvFolders": [],
+  "python.createEnvironment.trigger": "off",
   "python.terminal.activateEnvironment": false
 }
