@@ -44,3 +44,4 @@ env/
 # Temporary files
 *.log
 derby.log
+src/ifc2lbd/IFCtoLBD_CLI.jar
