@@ -1,0 +1,2312 @@
+@prefix dca-id: <https://dca.ethz.ch/id/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix premis: <http://www.loc.gov/premis/rdf/v3/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix schema1: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://dca.ethz.ch/id/00e8a8e09bdde50c/rr_82/i_1#pid_6c8bdd0d38f7422590a4fea0d424f4de> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/00e8a8e09bdde50c/rr_82/i_1> ;
+    rico:normalizedValue "CH-00000-0:68" .
+
+<https://dca.ethz.ch/id/00e8a8e09bdde50c/rr_82/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/00e8a8e09bdde50c/rr_82/i_1/b_1#fixity_c3aba148b79c4fc191de1e450efeaea2> ;
+    premis:size 356721 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid11.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/00e8a8e09bdde50c/rr_82/i_1> .
+
+<https://dca.ethz.ch/id/0c5c5ffd1ba83473/rr_80/i_1#pid_0f2963f4f9b1475a9bf36bacd7f37572> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/0c5c5ffd1ba83473/rr_80/i_1> ;
+    rico:normalizedValue "CH-00000-0:66" .
+
+<https://dca.ethz.ch/id/0c5c5ffd1ba83473/rr_80/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/0c5c5ffd1ba83473/rr_80/i_1/b_1#fixity_cef499b04a644f6d997f9d7253dcc3b2> ;
+    premis:size 441530 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid09.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/0c5c5ffd1ba83473/rr_80/i_1> .
+
+<https://dca.ethz.ch/id/13adc07d038836bf/rr_47/i_1#pid_3009d6bc37f948b285307209a35068af> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/13adc07d038836bf/rr_47/i_1> ;
+    rico:normalizedValue "CH-00000-0:33" .
+
+<https://dca.ethz.ch/id/13adc07d038836bf/rr_47/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1168> ;
+    premis:fixity <https://dca.ethz.ch/id/13adc07d038836bf/rr_47/i_1/b_1#fixity_394045da23f348e98f28f25dfc9281b0> ;
+    premis:size 458900 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/.mayaSwatches/060606_rgb_trauben.mb.swatches" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/13adc07d038836bf/rr_47/i_1> .
+
+<https://dca.ethz.ch/id/161e546d72d31247/rr_40/i_1#pid_e82dfa2f8fa54dc892d6bcdb8f7f2c24> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/161e546d72d31247/rr_40/i_1> ;
+    rico:normalizedValue "CH-00000-0:26" .
+
+<https://dca.ethz.ch/id/161e546d72d31247/rr_40/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/161e546d72d31247/rr_40/i_1/b_1#fixity_0d491ec448a4474c82d4efe741a669f5> ;
+    premis:size 12560 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/fluid04.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/161e546d72d31247/rr_40/i_1> .
+
+<https://dca.ethz.ch/id/1a7d709be37de98b/rr_20/i_1#pid_4be8e97787b046df94130a2dbedb072a> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/1a7d709be37de98b/rr_20/i_1> ;
+    rico:normalizedValue "CH-00000-0:8" .
+
+<https://dca.ethz.ch/id/1a7d709be37de98b/rr_20/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/36> ;
+    ebucore:hasMimeType "image/vnd.dwg" ;
+    premis:fixity <https://dca.ethz.ch/id/1a7d709be37de98b/rr_20/i_1/b_1#fixity_564dde1d11d6496abeaf0c87cadb08d8> ;
+    premis:size 608332 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060419_Praesentation/060403_Rotation_Test.dwg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/1a7d709be37de98b/rr_20/i_1> .
+
+<https://dca.ethz.ch/id/1b356ec5b8f040b6/rr_58/i_1#pid_b34cae67945a478d9d447ba2d52e7fa0> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/1b356ec5b8f040b6/rr_58/i_1> ;
+    rico:normalizedValue "CH-00000-0:44" .
+
+<https://dca.ethz.ch/id/1b356ec5b8f040b6/rr_58/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/1b356ec5b8f040b6/rr_58/i_1/b_1#fixity_5a474770ac39419b9c92a83f696fc72b> ;
+    premis:size 12584 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/fluid15.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/1b356ec5b8f040b6/rr_58/i_1> .
+
+<https://dca.ethz.ch/id/1ded3b0faf9e1db4/rr_88/i_1#pid_e363c7675d954bdabf493c151f093c18> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/1ded3b0faf9e1db4/rr_88/i_1> ;
+    rico:normalizedValue "CH-00000-0:73" .
+
+<https://dca.ethz.ch/id/1ded3b0faf9e1db4/rr_88/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/1ded3b0faf9e1db4/rr_88/i_1/b_1#fixity_de72e31f0b4f4232baf3449a22601093> ;
+    premis:size 626449 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid14.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/1ded3b0faf9e1db4/rr_88/i_1> .
+
+<https://dca.ethz.ch/id/211d262a036df456/rr_53/i_1#pid_a717218e9d2d4207b00c668e21c2ec8c> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/211d262a036df456/rr_53/i_1> ;
+    rico:normalizedValue "CH-00000-0:39" .
+
+<https://dca.ethz.ch/id/211d262a036df456/rr_53/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/861> ;
+    premis:fixity <https://dca.ethz.ch/id/211d262a036df456/rr_53/i_1/b_1#fixity_46c9c6edf35b461e969fa7eae94275b8> ;
+    premis:size 2607832 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_3DModellWallsForceRaw.mb" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/211d262a036df456/rr_53/i_1> .
+
+<https://dca.ethz.ch/id/23d0e3b1f2bdd48a/rr_56/i_1#pid_82d26260768e415f980cd4621fbcff8d> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/23d0e3b1f2bdd48a/rr_56/i_1> ;
+    rico:normalizedValue "CH-00000-0:42" .
+
+<https://dca.ethz.ch/id/23d0e3b1f2bdd48a/rr_56/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/23d0e3b1f2bdd48a/rr_56/i_1/b_1#fixity_eb1c57c3d4984beebacc0399959e9fc5> ;
+    premis:size 12580 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/fluid14.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/23d0e3b1f2bdd48a/rr_56/i_1> .
+
+<https://dca.ethz.ch/id/263a63ca0bd62edb/rr_70/i_1#pid_249758ca26784a24a49dbb3c5370c68e> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/263a63ca0bd62edb/rr_70/i_1> ;
+    rico:normalizedValue "CH-00000-0:56" .
+
+<https://dca.ethz.ch/id/263a63ca0bd62edb/rr_70/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/263a63ca0bd62edb/rr_70/i_1/b_1#fixity_ad538b6995274e30a31e533bec199a0f> ;
+    premis:size 12208 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/trauben_logo.bmp.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/263a63ca0bd62edb/rr_70/i_1> .
+
+<https://dca.ethz.ch/id/2da07ae0489e59ad/rr_69/i_1#pid_ec1454a3af9445168d93699cb3b117eb> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/2da07ae0489e59ad/rr_69/i_1> ;
+    rico:normalizedValue "CH-00000-0:55" .
+
+<https://dca.ethz.ch/id/2da07ae0489e59ad/rr_69/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/2da07ae0489e59ad/rr_69/i_1/b_1#fixity_62cf031ced1043c099d9a58be83a595e> ;
+    premis:size 12148 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/trauben_bw2.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/2da07ae0489e59ad/rr_69/i_1> .
+
+<https://dca.ethz.ch/id/34877a6955052c66/rr_65/i_1#pid_ece6d99b942344c68e19b9a48ff77b80> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/34877a6955052c66/rr_65/i_1> ;
+    rico:normalizedValue "CH-00000-0:51" .
+
+<https://dca.ethz.ch/id/34877a6955052c66/rr_65/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/34877a6955052c66/rr_65/i_1/b_1#fixity_0fcde4c2a1054912bd4d3ddb3f9a1177> ;
+    premis:size 12180 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/rendering.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/34877a6955052c66/rr_65/i_1> .
+
+<https://dca.ethz.ch/id/385f9e5bc7914ae2/rr_43/i_1#pid_ec556082282d4b6aabd096045a6bc5d2> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/385f9e5bc7914ae2/rr_43/i_1> ;
+    rico:normalizedValue "CH-00000-0:29" .
+
+<https://dca.ethz.ch/id/385f9e5bc7914ae2/rr_43/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/385f9e5bc7914ae2/rr_43/i_1/b_1#fixity_ec28814ff08c4cf4833af73680bd780b> ;
+    premis:size 12588 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/fluid07.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/385f9e5bc7914ae2/rr_43/i_1> .
+
+<https://dca.ethz.ch/id/3eaf66ff7047f472/rr_71/i_1#pid_7c36553c392b48a98dfadd2d29f28714> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/3eaf66ff7047f472/rr_71/i_1> ;
+    rico:normalizedValue "CH-00000-0:57" .
+
+<https://dca.ethz.ch/id/3eaf66ff7047f472/rr_71/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/3eaf66ff7047f472/rr_71/i_1/b_1#fixity_bf521c892f314ffa98dc137d15e9cc6f> ;
+    premis:size 11740 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/trauben_quer_bw2.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/3eaf66ff7047f472/rr_71/i_1> .
+
+<https://dca.ethz.ch/id/3f327358b52be29e/rr_49/i_1#pid_fa6cd7fff88940e9bb3cbd2d9762f498> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/3f327358b52be29e/rr_49/i_1> ;
+    rico:normalizedValue "CH-00000-0:35" .
+
+<https://dca.ethz.ch/id/3f327358b52be29e/rr_49/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1168> ;
+    premis:fixity <https://dca.ethz.ch/id/3f327358b52be29e/rr_49/i_1/b_1#fixity_cd87c4c5b063420cbd6f2a89bad17f5d> ;
+    premis:size 397460 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/.mayaSwatches/060606_rgb_trauben_logo.mb.swatches" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/3f327358b52be29e/rr_49/i_1> .
+
+<https://dca.ethz.ch/id/43950ae0719a9cdb/rr_79/i_1#pid_8d6eff81430747ceab5ca9c2fd8a513f> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/43950ae0719a9cdb/rr_79/i_1> ;
+    rico:normalizedValue "CH-00000-0:65" .
+
+<https://dca.ethz.ch/id/43950ae0719a9cdb/rr_79/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/43950ae0719a9cdb/rr_79/i_1/b_1#fixity_12e3b77f1c4547939a52eaf0ba8918ea> ;
+    premis:size 439799 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid08.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/43950ae0719a9cdb/rr_79/i_1> .
+
+<https://dca.ethz.ch/id/448eb9a6adb69948/rr_94/i_1#pid_d457ce11fb67430a941ecceb6dd74622> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/448eb9a6adb69948/rr_94/i_1> ;
+    rico:normalizedValue "CH-00000-0:79" .
+
+<https://dca.ethz.ch/id/448eb9a6adb69948/rr_94/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/448eb9a6adb69948/rr_94/i_1/b_1#fixity_6a55575e72264161adfa444b1c8b80cc> ;
+    premis:size 217865 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/flüssigkeit/1336532.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/448eb9a6adb69948/rr_94/i_1> .
+
+<https://dca.ethz.ch/id/45de4e6040b646fe/rr_59/i_1#pid_94b9cdd63e194dca92e45d8ba88fc6f8> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/45de4e6040b646fe/rr_59/i_1> ;
+    rico:normalizedValue "CH-00000-0:45" .
+
+<https://dca.ethz.ch/id/45de4e6040b646fe/rr_59/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/861> ;
+    premis:fixity <https://dca.ethz.ch/id/45de4e6040b646fe/rr_59/i_1/b_1#fixity_21e4a9e5b09a4c509f1efd58960a191a> ;
+    premis:size 2659544 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_force02.mb" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/45de4e6040b646fe/rr_59/i_1> .
+
+<https://dca.ethz.ch/id/463648928867250f/rr_100/i_1#pid_51677321b6c94884a68328cdad9829d8> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/463648928867250f/rr_100/i_1> ;
+    rico:normalizedValue "CH-00000-0:85" .
+
+<https://dca.ethz.ch/id/463648928867250f/rr_100/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/463648928867250f/rr_100/i_1/b_1#fixity_b678a09729374dc8bd124bc817089439> ;
+    premis:size 132051 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/flüssigkeit/Wasser-14.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/463648928867250f/rr_100/i_1> .
+
+<https://dca.ethz.ch/id/49aa66a705c06f44/rr_84/i_1#pid_328ed97b62bb4dce9c28798dd1a333a1> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/49aa66a705c06f44/rr_84/i_1> ;
+    rico:normalizedValue "CH-00000-0:69" .
+
+<https://dca.ethz.ch/id/49aa66a705c06f44/rr_84/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/43> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/49aa66a705c06f44/rr_84/i_1/b_1#fixity_80ac4d1bd0da44e5af385a88233d1593> ;
+    premis:size 215602 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/flüssigkeit/104380501_001519e5b8_b.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/49aa66a705c06f44/rr_84/i_1> .
+
+<https://dca.ethz.ch/id/4f08cfd14670b478/rr_81/i_1#pid_e79eb19d08584872b77bea34484c18af> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/4f08cfd14670b478/rr_81/i_1> ;
+    rico:normalizedValue "CH-00000-0:67" .
+
+<https://dca.ethz.ch/id/4f08cfd14670b478/rr_81/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/4f08cfd14670b478/rr_81/i_1/b_1#fixity_5a2ac6d6a5c6434c8a4f89be51d65c87> ;
+    premis:size 572305 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid10.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/4f08cfd14670b478/rr_81/i_1> .
+
+<https://dca.ethz.ch/id/514116060d8c31cb/rr_39/i_1#pid_9fdae2d9a7024cbe92b88ec16a251816> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/514116060d8c31cb/rr_39/i_1> ;
+    rico:normalizedValue "CH-00000-0:25" .
+
+<https://dca.ethz.ch/id/514116060d8c31cb/rr_39/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/514116060d8c31cb/rr_39/i_1/b_1#fixity_77a07dbd29ca482e8557f622e2e95a01> ;
+    premis:size 9892 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/fluid03.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/514116060d8c31cb/rr_39/i_1> .
+
+<https://dca.ethz.ch/id/516dd4de2b4c4734/rr_77/i_1#pid_6ad9dc091799471ab97dfd60c9363dc5> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/516dd4de2b4c4734/rr_77/i_1> ;
+    rico:normalizedValue "CH-00000-0:63" .
+
+<https://dca.ethz.ch/id/516dd4de2b4c4734/rr_77/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/516dd4de2b4c4734/rr_77/i_1/b_1#fixity_d5e2130babc04074bf97b8536a5db3d5> ;
+    premis:size 651112 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid06.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/516dd4de2b4c4734/rr_77/i_1> .
+
+<https://dca.ethz.ch/id/551072f5cb6ec5ac/rr_52/i_1#pid_d9f12f2b652e419f8254a39a855a0166> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/551072f5cb6ec5ac/rr_52/i_1> ;
+    rico:normalizedValue "CH-00000-0:38" .
+
+<https://dca.ethz.ch/id/551072f5cb6ec5ac/rr_52/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/551072f5cb6ec5ac/rr_52/i_1/b_1#fixity_9f56e319642b4668a7751106c1745cac> ;
+    premis:size 12604 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/fluid12.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/551072f5cb6ec5ac/rr_52/i_1> .
+
+<https://dca.ethz.ch/id/551f4a21c7326ade/rr_30/i_1#pid_3b68243ba733430180a7fb0e5e17f0b1> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/551f4a21c7326ade/rr_30/i_1> ;
+    rico:normalizedValue "CH-00000-0:18" .
+
+<https://dca.ethz.ch/id/551f4a21c7326ade/rr_30/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1168> ;
+    premis:fixity <https://dca.ethz.ch/id/551f4a21c7326ade/rr_30/i_1/b_1#fixity_ab343e0ea4fb4a6798afa7cce3650d61> ;
+    premis:size 393344 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/.mayaSwatches/060606_force01.mb.swatches" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/551f4a21c7326ade/rr_30/i_1> .
+
+<https://dca.ethz.ch/id/55b0092e38104307/rr_54/i_1#pid_870e1f02ea814428a85a3e0b43bfdeb8> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/55b0092e38104307/rr_54/i_1> ;
+    rico:normalizedValue "CH-00000-0:40" .
+
+<https://dca.ethz.ch/id/55b0092e38104307/rr_54/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/55b0092e38104307/rr_54/i_1/b_1#fixity_fdd28d7f10104d8f9601839f8819615a> ;
+    premis:size 12592 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/fluid13.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/55b0092e38104307/rr_54/i_1> .
+
+<https://dca.ethz.ch/id/57a66595f3a1e965/rr_68/i_1#pid_b133f3eb031c423cbd854a85595cf4eb> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/57a66595f3a1e965/rr_68/i_1> ;
+    rico:normalizedValue "CH-00000-0:54" .
+
+<https://dca.ethz.ch/id/57a66595f3a1e965/rr_68/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/57a66595f3a1e965/rr_68/i_1/b_1#fixity_132a290f197a442390a5d657db9d99b6> ;
+    premis:size 12488 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/trauben_bw.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/57a66595f3a1e965/rr_68/i_1> .
+
+<https://dca.ethz.ch/id/57c42c5ea73e020d/rr_27/i_1#pid_e95f02d3309047e2b896bf8319d669a4> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/57c42c5ea73e020d/rr_27/i_1> ;
+    rico:normalizedValue "CH-00000-0:15" .
+
+<https://dca.ethz.ch/id/57c42c5ea73e020d/rr_27/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1141> ;
+    ebucore:hasMimeType "application/vnd.vectorworks" ;
+    premis:fixity <https://dca.ethz.ch/id/57c42c5ea73e020d/rr_27/i_1/b_1#fixity_1f13d20735804453b28b6499ef1d5c45> ;
+    premis:size 9744564 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060530_Fassadenelemente.mcd" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/57c42c5ea73e020d/rr_27/i_1> .
+
+<https://dca.ethz.ch/id/5976345028d8bd9c/rr_37/i_1#pid_3b9aa251ff9544a5b45f5fcd4e5f2ec1> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/5976345028d8bd9c/rr_37/i_1> ;
+    rico:normalizedValue "CH-00000-0:23" .
+
+<https://dca.ethz.ch/id/5976345028d8bd9c/rr_37/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/5976345028d8bd9c/rr_37/i_1/b_1#fixity_39589a9e21e44c739d729592ec9faeda> ;
+    premis:size 12592 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/fluid01.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/5976345028d8bd9c/rr_37/i_1> .
+
+<https://dca.ethz.ch/id/5baf1fa6c931ce01/rr_92/i_1#pid_80f47292133845c3b3de91e456114f24> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/5baf1fa6c931ce01/rr_92/i_1> ;
+    rico:normalizedValue "CH-00000-0:77" .
+
+<https://dca.ethz.ch/id/5baf1fa6c931ce01/rr_92/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/x-fmt/391> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/5baf1fa6c931ce01/rr_92/i_1/b_1#fixity_23d5ceaecacd497589ac7e5b952b81e0> ;
+    premis:size 773720 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/flüssigkeit/13050856_7d7bbd180e_o.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/5baf1fa6c931ce01/rr_92/i_1> .
+
+<https://dca.ethz.ch/id/5cf18026cf67bca8/rr_42/i_1#pid_22950925f11d4e0899973eaf1a6087fc> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/5cf18026cf67bca8/rr_42/i_1> ;
+    rico:normalizedValue "CH-00000-0:28" .
+
+<https://dca.ethz.ch/id/5cf18026cf67bca8/rr_42/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/5cf18026cf67bca8/rr_42/i_1/b_1#fixity_171d48c00fc547cf9daef1423db62500> ;
+    premis:size 12604 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/fluid06.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/5cf18026cf67bca8/rr_42/i_1> .
+
+<https://dca.ethz.ch/id/5e6306f4d763ec03/rr_14/i_1#pid_a047ed5fb4b8430fad7ba80c148ac175> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/5e6306f4d763ec03/rr_14/i_1> ;
+    rico:normalizedValue "CH-00000-0:4" .
+
+<https://dca.ethz.ch/id/5e6306f4d763ec03/rr_14/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/5e6306f4d763ec03/rr_14/i_1/b_1#fixity_7062d4b636e74515bc5520e1a8e805dd> ;
+    premis:size 81764 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060419_Praesentation/060419_Plan_2/testtexture.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/5e6306f4d763ec03/rr_14/i_1> .
+
+<https://dca.ethz.ch/id/5f42b3d9c6c3260c/rr_78/i_1#pid_7eff7f24c2f440b2ace6da3285423547> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/5f42b3d9c6c3260c/rr_78/i_1> ;
+    rico:normalizedValue "CH-00000-0:64" .
+
+<https://dca.ethz.ch/id/5f42b3d9c6c3260c/rr_78/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/5f42b3d9c6c3260c/rr_78/i_1/b_1#fixity_6caceeebde744363ba7183448ba059d5> ;
+    premis:size 509512 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid07.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/5f42b3d9c6c3260c/rr_78/i_1> .
+
+<https://dca.ethz.ch/id/63c443e5c6ca6167/rr_51/i_1#pid_c15dc90de02541d8b2d758053517bae2> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/63c443e5c6ca6167/rr_51/i_1> ;
+    rico:normalizedValue "CH-00000-0:37" .
+
+<https://dca.ethz.ch/id/63c443e5c6ca6167/rr_51/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/861> ;
+    premis:fixity <https://dca.ethz.ch/id/63c443e5c6ca6167/rr_51/i_1/b_1#fixity_86c7e7489c3d43039dce04d3af055fbb> ;
+    premis:size 383960 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_3DModellRaw.mb" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/63c443e5c6ca6167/rr_51/i_1> .
+
+<https://dca.ethz.ch/id/67737c939bc897c2/rr_75/i_1#pid_c7f0dd5e62c6454c9d025c1f1161fd79> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/67737c939bc897c2/rr_75/i_1> ;
+    rico:normalizedValue "CH-00000-0:61" .
+
+<https://dca.ethz.ch/id/67737c939bc897c2/rr_75/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/67737c939bc897c2/rr_75/i_1/b_1#fixity_3cb5cfe4ce934b66ba87931278bce7f6> ;
+    premis:size 647375 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid04.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/67737c939bc897c2/rr_75/i_1> .
+
+<https://dca.ethz.ch/id/69a6849cc44cfff8/rr_60/i_1#pid_918a1819a34b4a9b9af4ebe62e7b08da> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/69a6849cc44cfff8/rr_60/i_1> ;
+    rico:normalizedValue "CH-00000-0:46" .
+
+<https://dca.ethz.ch/id/69a6849cc44cfff8/rr_60/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/861> ;
+    premis:fixity <https://dca.ethz.ch/id/69a6849cc44cfff8/rr_60/i_1/b_1#fixity_7a2d0645f9104e018c4c9d70701e1e49> ;
+    premis:size 2659592 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_force03.mb" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/69a6849cc44cfff8/rr_60/i_1> .
+
+<https://dca.ethz.ch/id/69b11aa74d91ff03/rr_57/i_1#pid_bdeb91d685b94985af9bf4a9f1df24ad> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/69b11aa74d91ff03/rr_57/i_1> ;
+    rico:normalizedValue "CH-00000-0:43" .
+
+<https://dca.ethz.ch/id/69b11aa74d91ff03/rr_57/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/861> ;
+    premis:fixity <https://dca.ethz.ch/id/69b11aa74d91ff03/rr_57/i_1/b_1#fixity_3680da3208ec41089ebc63be1a374a82> ;
+    premis:size 2615940 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_force01.mb" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/69b11aa74d91ff03/rr_57/i_1> .
+
+<https://dca.ethz.ch/id/6cb4db00fe911579/rr_62/i_1#pid_fdff0586cc3e40bb8a4c1a7db161971f> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/6cb4db00fe911579/rr_62/i_1> ;
+    rico:normalizedValue "CH-00000-0:48" .
+
+<https://dca.ethz.ch/id/6cb4db00fe911579/rr_62/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/6cb4db00fe911579/rr_62/i_1/b_1#fixity_6ce050a139a54c378fffe16ee24c3600> ;
+    premis:size 12508 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/fluid17.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/6cb4db00fe911579/rr_62/i_1> .
+
+<https://dca.ethz.ch/id/6f79289dc7f37536/rr_63/i_1#pid_763df5994a544ec786793167098426ab> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/6f79289dc7f37536/rr_63/i_1> ;
+    rico:normalizedValue "CH-00000-0:49" .
+
+<https://dca.ethz.ch/id/6f79289dc7f37536/rr_63/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/6f79289dc7f37536/rr_63/i_1/b_1#fixity_268b67198c464d9daee4058d9dea2067> ;
+    premis:size 2960 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/logo.bmp.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/6f79289dc7f37536/rr_63/i_1> .
+
+<https://dca.ethz.ch/id/70216c498b4f95d7/rr_11/i_1#pid_117f6972a7b94ccbad377c35048dbd21> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/70216c498b4f95d7/rr_11/i_1> ;
+    rico:normalizedValue "CH-00000-0:2" .
+
+<https://dca.ethz.ch/id/70216c498b4f95d7/rr_11/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/36> ;
+    ebucore:hasMimeType "image/vnd.dwg" ;
+    premis:fixity <https://dca.ethz.ch/id/70216c498b4f95d7/rr_11/i_1/b_1#fixity_711c757a8c844e8abca15a64ed8d3d31> ;
+    premis:size 230761 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060419_Praesentation/060419_Plan_1/060419_plan1_v03.dwg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/70216c498b4f95d7/rr_11/i_1> .
+
+<https://dca.ethz.ch/id/71caab4b9eb51974/rr_25/i_1#pid_b114647e96ff458d9e17661394a890d7> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/71caab4b9eb51974/rr_25/i_1> ;
+    rico:normalizedValue "CH-00000-0:13" .
+
+<https://dca.ethz.ch/id/71caab4b9eb51974/rr_25/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/18> ;
+    ebucore:hasMimeType "application/pdf" ;
+    premis:fixity <https://dca.ethz.ch/id/71caab4b9eb51974/rr_25/i_1/b_1#fixity_187ada38e8164c2d86f0fb61bc2ee961> ;
+    premis:size 2749980 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060419_Praesentation/060419_Plan_2/060419_Plan_2.pdf" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/71caab4b9eb51974/rr_25/i_1> .
+
+<https://dca.ethz.ch/id/71de0c0979c1f9a0/rr_97/i_1#pid_25838a1eb0264756973b43999c1747a6> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/71de0c0979c1f9a0/rr_97/i_1> ;
+    rico:normalizedValue "CH-00000-0:82" .
+
+<https://dca.ethz.ch/id/71de0c0979c1f9a0/rr_97/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/x-fmt/391> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/71de0c0979c1f9a0/rr_97/i_1/b_1#fixity_83d74641346743b695e88dd08d72c460> ;
+    premis:size 28117 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/flüssigkeit/45212468_469b1fbca3_o.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/71de0c0979c1f9a0/rr_97/i_1> .
+
+<https://dca.ethz.ch/id/723f0fdc21589569/rr_28/i_1#pid_9f836fbae4a94a8a8b0473730d66583e> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/723f0fdc21589569/rr_28/i_1> ;
+    rico:normalizedValue "CH-00000-0:16" .
+
+<https://dca.ethz.ch/id/723f0fdc21589569/rr_28/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1168> ;
+    premis:fixity <https://dca.ethz.ch/id/723f0fdc21589569/rr_28/i_1/b_1#fixity_c2ad69daa16a4700810ba72736054510> ;
+    premis:size 327792 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/.mayaSwatches/060606_3DModellWallsForceRaw.mb.swatches" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/723f0fdc21589569/rr_28/i_1> .
+
+<https://dca.ethz.ch/id/78e7f3578de7546a/rr_34/i_1#pid_f77f6204b70543a299380a2256958ba4> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/78e7f3578de7546a/rr_34/i_1> ;
+    rico:normalizedValue "CH-00000-0:22" .
+
+<https://dca.ethz.ch/id/78e7f3578de7546a/rr_34/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1168> ;
+    premis:fixity <https://dca.ethz.ch/id/78e7f3578de7546a/rr_34/i_1/b_1#fixity_d0fdcef7582e4e4cac7c1844ef55c0b4> ;
+    premis:size 102551 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/.mayaSwatches/060606_rgb_spheres.mb.swatches" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/78e7f3578de7546a/rr_34/i_1> .
+
+<https://dca.ethz.ch/id/82af7303086b295f/rr_76/i_1#pid_9ce5b5fb22064c9c9b6af723dd87b94f> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/82af7303086b295f/rr_76/i_1> ;
+    rico:normalizedValue "CH-00000-0:62" .
+
+<https://dca.ethz.ch/id/82af7303086b295f/rr_76/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/82af7303086b295f/rr_76/i_1/b_1#fixity_7e274341f8b64e1b89155708c00a909c> ;
+    premis:size 653915 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid05.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/82af7303086b295f/rr_76/i_1> .
+
+<https://dca.ethz.ch/id/8b6409b35cef56c8/rr_19/i_1#pid_96c13b3f291a49bd9ad3fbe2ed3bb3bc> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/8b6409b35cef56c8/rr_19/i_1> ;
+    rico:normalizedValue "CH-00000-0:7" .
+
+<https://dca.ethz.ch/id/8b6409b35cef56c8/rr_19/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1168> ;
+    premis:fixity <https://dca.ethz.ch/id/8b6409b35cef56c8/rr_19/i_1/b_1#fixity_6e9eb61030c14dc9a42c215fbab1fc8f> ;
+    premis:size 98435 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/.mayaSwatches/060606_3DModellRaw.mb.swatches" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/8b6409b35cef56c8/rr_19/i_1> .
+
+<https://dca.ethz.ch/id/8e65c2f5e3ad059d/rr_26/i_1#pid_e7580a9a8eac43f2b4aeac1861861905> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/8e65c2f5e3ad059d/rr_26/i_1> ;
+    rico:normalizedValue "CH-00000-0:14" .
+
+<https://dca.ethz.ch/id/8e65c2f5e3ad059d/rr_26/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1141> ;
+    ebucore:hasMimeType "application/vnd.vectorworks" ;
+    premis:fixity <https://dca.ethz.ch/id/8e65c2f5e3ad059d/rr_26/i_1/b_1#fixity_489dca8cc5bc461a8a8ee5fa8419e2f0> ;
+    premis:size 551726 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060512_verband02.mcd" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/8e65c2f5e3ad059d/rr_26/i_1> .
+
+<https://dca.ethz.ch/id/906bd92cd6f9c0d9/rr_64/i_1#pid_b5ec7a80597d4449b77250a02a2dba24> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/906bd92cd6f9c0d9/rr_64/i_1> ;
+    rico:normalizedValue "CH-00000-0:50" .
+
+<https://dca.ethz.ch/id/906bd92cd6f9c0d9/rr_64/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/906bd92cd6f9c0d9/rr_64/i_1/b_1#fixity_b5dbfedb5e88405c9db89bf30addb92d> ;
+    premis:size 4004 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/logo_raw_inv.bmp.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/906bd92cd6f9c0d9/rr_64/i_1> .
+
+<https://dca.ethz.ch/id/91fb58064551dbfc/rr_73/i_1#pid_929a18ed40d44e4e8a46462912ef3908> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/91fb58064551dbfc/rr_73/i_1> ;
+    rico:normalizedValue "CH-00000-0:59" .
+
+<https://dca.ethz.ch/id/91fb58064551dbfc/rr_73/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/91fb58064551dbfc/rr_73/i_1/b_1#fixity_cd7ed3bd2f084efa85247c415afefa87> ;
+    premis:size 759335 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid02.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/91fb58064551dbfc/rr_73/i_1> .
+
+<https://dca.ethz.ch/id/92f689711d6656ff/rr_21/i_1#pid_ddcf781108324ceb8c157b7f03153695> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/92f689711d6656ff/rr_21/i_1> ;
+    rico:normalizedValue "CH-00000-0:9" .
+
+<https://dca.ethz.ch/id/92f689711d6656ff/rr_21/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/36> ;
+    ebucore:hasMimeType "image/vnd.dwg" ;
+    premis:fixity <https://dca.ethz.ch/id/92f689711d6656ff/rr_21/i_1/b_1#fixity_84ec7399aa71468cb48cc47cf60925c2> ;
+    premis:size 633815 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060419_Praesentation/060405_Rotation_Test.dwg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/92f689711d6656ff/rr_21/i_1> .
+
+<https://dca.ethz.ch/id/9570ece8544715e3/rr_55/i_1#pid_70f946e1184246f6bb46369fe9996e7f> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/9570ece8544715e3/rr_55/i_1> ;
+    rico:normalizedValue "CH-00000-0:41" .
+
+<https://dca.ethz.ch/id/9570ece8544715e3/rr_55/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/861> ;
+    premis:fixity <https://dca.ethz.ch/id/9570ece8544715e3/rr_55/i_1/b_1#fixity_f7f39f1fb01d420da1b15e827086b645> ;
+    premis:size 4871716 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_3DModellWallsRGBRaw.mb" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/9570ece8544715e3/rr_55/i_1> .
+
+<https://dca.ethz.ch/id/9a7f87cb51c935a0/rr_44/i_1#pid_92cc878708b242ef9344574d1f1ec875> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/9a7f87cb51c935a0/rr_44/i_1> ;
+    rico:normalizedValue "CH-00000-0:30" .
+
+<https://dca.ethz.ch/id/9a7f87cb51c935a0/rr_44/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/9a7f87cb51c935a0/rr_44/i_1/b_1#fixity_13b693c6fa824b019efdbbaf6c748fba> ;
+    premis:size 12592 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/fluid08.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/9a7f87cb51c935a0/rr_44/i_1> .
+
+<https://dca.ethz.ch/id/a14834e57eb0f2f8/rr_87/i_1#pid_d5b85e0bcdc44097b0dd47778d594927> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/a14834e57eb0f2f8/rr_87/i_1> ;
+    rico:normalizedValue "CH-00000-0:72" .
+
+<https://dca.ethz.ch/id/a14834e57eb0f2f8/rr_87/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/a14834e57eb0f2f8/rr_87/i_1/b_1#fixity_0bfe2d4a609749499c95959cd3914a3b> ;
+    premis:size 624607 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid13.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/a14834e57eb0f2f8/rr_87/i_1> .
+
+<https://dca.ethz.ch/id/a2899cedcb327df2/rr_95/i_1#pid_705965eacf72475587cc08b49cd925b5> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/a2899cedcb327df2/rr_95/i_1> ;
+    rico:normalizedValue "CH-00000-0:80" .
+
+<https://dca.ethz.ch/id/a2899cedcb327df2/rr_95/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/43> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/a2899cedcb327df2/rr_95/i_1/b_1#fixity_fefa5a196372418d87dccf845fbf379f> ;
+    premis:size 368372 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/flüssigkeit/19270523_7d76c4c9a7_o.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/a2899cedcb327df2/rr_95/i_1> .
+
+<https://dca.ethz.ch/id/aee76790a811b9c8/rr_50/i_1#pid_e73ed3061f984c668b447b8d323e5285> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/aee76790a811b9c8/rr_50/i_1> ;
+    rico:normalizedValue "CH-00000-0:36" .
+
+<https://dca.ethz.ch/id/aee76790a811b9c8/rr_50/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/aee76790a811b9c8/rr_50/i_1/b_1#fixity_dab98202fb50422a848da1f2af4d5185> ;
+    premis:size 12592 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/fluid11.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/aee76790a811b9c8/rr_50/i_1> .
+
+<https://dca.ethz.ch/id/b6ba3312cd5cc339/rr_85/i_1#pid_3803c5bf89ef40f0993fa05630dc579c> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/b6ba3312cd5cc339/rr_85/i_1> ;
+    rico:normalizedValue "CH-00000-0:70" .
+
+<https://dca.ethz.ch/id/b6ba3312cd5cc339/rr_85/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/b6ba3312cd5cc339/rr_85/i_1/b_1#fixity_5bc7032c77ec4c81af34f4e49c30f088> ;
+    premis:size 125452 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/flüssigkeit/1601449.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/b6ba3312cd5cc339/rr_85/i_1> .
+
+<https://dca.ethz.ch/id/b807ac5488591c44/rr_38/i_1#pid_a2714e92929b44078eadaef6d4037b69> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/b807ac5488591c44/rr_38/i_1> ;
+    rico:normalizedValue "CH-00000-0:24" .
+
+<https://dca.ethz.ch/id/b807ac5488591c44/rr_38/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/b807ac5488591c44/rr_38/i_1/b_1#fixity_6efcd95733054dee8d204c377ae53723> ;
+    premis:size 12464 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/fluid02.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/b807ac5488591c44/rr_38/i_1> .
+
+<https://dca.ethz.ch/id/b8aca8776a962a6b/rr_99/i_1#pid_c052332ba0bd47a9a0bcf5c305ec98cb> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/b8aca8776a962a6b/rr_99/i_1> ;
+    rico:normalizedValue "CH-00000-0:84" .
+
+<https://dca.ethz.ch/id/b8aca8776a962a6b/rr_99/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/b8aca8776a962a6b/rr_99/i_1/b_1#fixity_7858d6806e3f424090a12351ef333df8> ;
+    premis:size 26042 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/flüssigkeit/Bewegte%20Wasser%201.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/b8aca8776a962a6b/rr_99/i_1> .
+
+<https://dca.ethz.ch/id/baaa48105d207c69/rr_66/i_1#pid_068e3421865d4137b783469dc75c486f> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/baaa48105d207c69/rr_66/i_1> ;
+    rico:normalizedValue "CH-00000-0:52" .
+
+<https://dca.ethz.ch/id/baaa48105d207c69/rr_66/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/baaa48105d207c69/rr_66/i_1/b_1#fixity_6f48b7dc757a4ef8b37f3ec0b1986241> ;
+    premis:size 11620 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/rendering2.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/baaa48105d207c69/rr_66/i_1> .
+
+<https://dca.ethz.ch/id/bf7deb254c763e54/rr_16/i_1#pid_bd5311c59170432d945f7e277668dfb3> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/bf7deb254c763e54/rr_16/i_1> ;
+    rico:normalizedValue "CH-00000-0:5" .
+
+<https://dca.ethz.ch/id/bf7deb254c763e54/rr_16/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/36> ;
+    ebucore:hasMimeType "image/vnd.dwg" ;
+    premis:fixity <https://dca.ethz.ch/id/bf7deb254c763e54/rr_16/i_1/b_1#fixity_4a542424ab8549819842ca4345166700> ;
+    premis:size 266425 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060419_Praesentation/060419_Plan_2/060418_Schliessvariante_3.33Seite_12Steine_28Lagen_working_Expression.dwg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/bf7deb254c763e54/rr_16/i_1> .
+
+<https://dca.ethz.ch/id/c2cae6160089a0bc/rr_24/i_1#pid_a35cd75bf41d45089801006dc9e3a796> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/c2cae6160089a0bc/rr_24/i_1> ;
+    rico:normalizedValue "CH-00000-0:12" .
+
+<https://dca.ethz.ch/id/c2cae6160089a0bc/rr_24/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/561> ;
+    ebucore:hasMimeType "application/postscript" ;
+    premis:fixity <https://dca.ethz.ch/id/c2cae6160089a0bc/rr_24/i_1/b_1#fixity_b2fa8ddcaf3042c3bc2392488df82460> ;
+    premis:size 1474908 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060419_Praesentation/060419_Plan_2/060419_Plan_2.ai" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/c2cae6160089a0bc/rr_24/i_1> .
+
+<https://dca.ethz.ch/id/c58c70ade2af4586/rr_41/i_1#pid_0da5e992e991411f861ce8202c19cc8f> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/c58c70ade2af4586/rr_41/i_1> ;
+    rico:normalizedValue "CH-00000-0:27" .
+
+<https://dca.ethz.ch/id/c58c70ade2af4586/rr_41/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/c58c70ade2af4586/rr_41/i_1/b_1#fixity_f0e44749afbc49ce8074f2121c89aa28> ;
+    premis:size 12600 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/fluid05.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/c58c70ade2af4586/rr_41/i_1> .
+
+<https://dca.ethz.ch/id/c5bb5d0409f7afbd/rr_89/i_1#pid_42187eae1c8944d08772a5de6845d4ba> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/c5bb5d0409f7afbd/rr_89/i_1> ;
+    rico:normalizedValue "CH-00000-0:74" .
+
+<https://dca.ethz.ch/id/c5bb5d0409f7afbd/rr_89/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/c5bb5d0409f7afbd/rr_89/i_1/b_1#fixity_2dbf50cc73df43b381cc10930863dd3d> ;
+    premis:size 644082 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid15.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/c5bb5d0409f7afbd/rr_89/i_1> .
+
+<https://dca.ethz.ch/id/cae5a835595b5cfd/rr_61/i_1#pid_20e91b3e95bf4b859d95bac4f257f612> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/cae5a835595b5cfd/rr_61/i_1> ;
+    rico:normalizedValue "CH-00000-0:47" .
+
+<https://dca.ethz.ch/id/cae5a835595b5cfd/rr_61/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/cae5a835595b5cfd/rr_61/i_1/b_1#fixity_be2c6f0c7251492e95cce8055241f2bb> ;
+    premis:size 12604 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/fluid16.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/cae5a835595b5cfd/rr_61/i_1> .
+
+<https://dca.ethz.ch/id/cb6cfc0e23d304da/rr_46/i_1#pid_de78090d9ce745a486625c5e7e85f2c6> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/cb6cfc0e23d304da/rr_46/i_1> ;
+    rico:normalizedValue "CH-00000-0:32" .
+
+<https://dca.ethz.ch/id/cb6cfc0e23d304da/rr_46/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/cb6cfc0e23d304da/rr_46/i_1/b_1#fixity_89dddc28ef844c0094d2841e5a748f2a> ;
+    premis:size 12552 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/fluid09.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/cb6cfc0e23d304da/rr_46/i_1> .
+
+<https://dca.ethz.ch/id/cf3c5fc8c38d565c/rr_48/i_1#pid_e74a3bdc907d41c58e15acdc727eafdb> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/cf3c5fc8c38d565c/rr_48/i_1> ;
+    rico:normalizedValue "CH-00000-0:34" .
+
+<https://dca.ethz.ch/id/cf3c5fc8c38d565c/rr_48/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/cf3c5fc8c38d565c/rr_48/i_1/b_1#fixity_c1fa55a0822f4f88b854b53b63157cf4> ;
+    premis:size 12604 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/fluid10.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/cf3c5fc8c38d565c/rr_48/i_1> .
+
+<https://dca.ethz.ch/id/d255a22c76e933db/rr_13/i_1#pid_fa966347fa4746efbab41db28af329a7> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/d255a22c76e933db/rr_13/i_1> ;
+    rico:normalizedValue "CH-00000-0:3" .
+
+<https://dca.ethz.ch/id/d255a22c76e933db/rr_13/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/36> ;
+    ebucore:hasMimeType "image/vnd.dwg" ;
+    premis:fixity <https://dca.ethz.ch/id/d255a22c76e933db/rr_13/i_1/b_1#fixity_f6e8a8d9a87444f482500f17ed9f764c> ;
+    premis:size 257485 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060419_Praesentation/060419_Plan_2/060418_Schliessvariante_3.33Seite_12Steine_28Lagen_working_Expression.bak" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/d255a22c76e933db/rr_13/i_1> .
+
+<https://dca.ethz.ch/id/d3613f6a61133562/rr_23/i_1#pid_67342166b0654b11aa1dc693491230a3> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/d3613f6a61133562/rr_23/i_1> ;
+    rico:normalizedValue "CH-00000-0:11" .
+
+<https://dca.ethz.ch/id/d3613f6a61133562/rr_23/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/x-fmt/92> ;
+    ebucore:hasMimeType "image/vnd.adobe.photoshop" ;
+    premis:fixity <https://dca.ethz.ch/id/d3613f6a61133562/rr_23/i_1/b_1#fixity_8d426fe7be82420e85973daa3f70a3cd> ;
+    premis:size 9995110 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060419_Praesentation/060419_Plan_2/060418_Schliessvariante_3.33Seite_12Steine_28Lagen_working_Expression.5.psd" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/d3613f6a61133562/rr_23/i_1> .
+
+<https://dca.ethz.ch/id/d4bf2f289361359f/rr_96/i_1#pid_b9c4029a17594a36b065650ef9bd02a7> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/d4bf2f289361359f/rr_96/i_1> ;
+    rico:normalizedValue "CH-00000-0:81" .
+
+<https://dca.ethz.ch/id/d4bf2f289361359f/rr_96/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/x-fmt/391> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/d4bf2f289361359f/rr_96/i_1/b_1#fixity_89196d2aca73409b800a72e82af57266> ;
+    premis:size 22783 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/flüssigkeit/45212466_d66e219586_o.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/d4bf2f289361359f/rr_96/i_1> .
+
+<https://dca.ethz.ch/id/daf335498edf962e/rr_32/i_1#pid_b0b31fa3d6ed43b1a656e7d23839cc12> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/daf335498edf962e/rr_32/i_1> ;
+    rico:normalizedValue "CH-00000-0:20" .
+
+<https://dca.ethz.ch/id/daf335498edf962e/rr_32/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1168> ;
+    premis:fixity <https://dca.ethz.ch/id/daf335498edf962e/rr_32/i_1/b_1#fixity_b135745dc5874c3fababf40ecd32771a> ;
+    premis:size 393344 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/.mayaSwatches/060606_force03.mb.swatches" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/daf335498edf962e/rr_32/i_1> .
+
+<https://dca.ethz.ch/id/dc56a28ebb85ce00/rr_22/i_1#pid_f5823eab8c104902ba9def82a64ff493> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/dc56a28ebb85ce00/rr_22/i_1> ;
+    rico:normalizedValue "CH-00000-0:10" .
+
+<https://dca.ethz.ch/id/dc56a28ebb85ce00/rr_22/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/18> ;
+    ebucore:hasMimeType "application/pdf" ;
+    premis:fixity <https://dca.ethz.ch/id/dc56a28ebb85ce00/rr_22/i_1/b_1#fixity_0faad0873c4f421a942a475501f52c46> ;
+    premis:size 361828 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060419_Praesentation/060419_Plan_1/060419_plan1_v03.pdf" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/dc56a28ebb85ce00/rr_22/i_1> .
+
+<https://dca.ethz.ch/id/de1492cca90347a7/rr_10/i_1#pid_295dbfa494884c729e102c581e27834a> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/de1492cca90347a7/rr_10/i_1> ;
+    rico:normalizedValue "CH-00000-0:1" .
+
+<https://dca.ethz.ch/id/de1492cca90347a7/rr_10/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/36> ;
+    ebucore:hasMimeType "image/vnd.dwg" ;
+    premis:fixity <https://dca.ethz.ch/id/de1492cca90347a7/rr_10/i_1/b_1#fixity_afe6be54ce1446638194d56b1bfcf080> ;
+    premis:size 230752 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060419_Praesentation/060419_Plan_1/060419_plan1_v03.bak" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/de1492cca90347a7/rr_10/i_1> .
+
+<https://dca.ethz.ch/id/de7c5726621be932/rr_91/i_1#pid_5ab82c12865b477fbe047226e0c8506d> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/de7c5726621be932/rr_91/i_1> ;
+    rico:normalizedValue "CH-00000-0:76" .
+
+<https://dca.ethz.ch/id/de7c5726621be932/rr_91/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/de7c5726621be932/rr_91/i_1/b_1#fixity_0eb28d4f2f56433e83ebc33a85f949ef> ;
+    premis:size 433532 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid17.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/de7c5726621be932/rr_91/i_1> .
+
+<https://dca.ethz.ch/id/e03b6a208dbc7772/rr_74/i_1#pid_f750d6b6e6de4616b93955209bc9abd4> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/e03b6a208dbc7772/rr_74/i_1> ;
+    rico:normalizedValue "CH-00000-0:60" .
+
+<https://dca.ethz.ch/id/e03b6a208dbc7772/rr_74/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/e03b6a208dbc7772/rr_74/i_1/b_1#fixity_d5c224d64daa425aa124889143ae9ae2> ;
+    premis:size 477028 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid03.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/e03b6a208dbc7772/rr_74/i_1> .
+
+<https://dca.ethz.ch/id/e3f51756ee3e552e/rr_17/i_1#pid_b616352d7fbf47acbd1cf340a76721c5> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/e3f51756ee3e552e/rr_17/i_1> ;
+    rico:normalizedValue "CH-00000-0:6" .
+
+<https://dca.ethz.ch/id/e3f51756ee3e552e/rr_17/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/36> ;
+    ebucore:hasMimeType "image/vnd.dwg" ;
+    premis:fixity <https://dca.ethz.ch/id/e3f51756ee3e552e/rr_17/i_1/b_1#fixity_fb9fb88d364e4420bcd7d109140bb75b> ;
+    premis:size 633815 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060405_Rotation_Test.dwg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/e3f51756ee3e552e/rr_17/i_1> .
+
+<https://dca.ethz.ch/id/e50d626671172a1f/rr_98/i_1#pid_ef1014faa84d458fba7712bfb9b46be6> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/e50d626671172a1f/rr_98/i_1> ;
+    rico:normalizedValue "CH-00000-0:83" .
+
+<https://dca.ethz.ch/id/e50d626671172a1f/rr_98/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/43> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/e50d626671172a1f/rr_98/i_1/b_1#fixity_bf8386698ca048f6800dd01d0eb58322> ;
+    premis:size 100386 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/flüssigkeit/5135722_4a3615080f_o.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/e50d626671172a1f/rr_98/i_1> .
+
+<https://dca.ethz.ch/id/e64eec0a269e41e1/rr_45/i_1#pid_837e61c5dc5940938ba14a19bc613a7f> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/e64eec0a269e41e1/rr_45/i_1> ;
+    rico:normalizedValue "CH-00000-0:31" .
+
+<https://dca.ethz.ch/id/e64eec0a269e41e1/rr_45/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1168> ;
+    premis:fixity <https://dca.ethz.ch/id/e64eec0a269e41e1/rr_45/i_1/b_1#fixity_f7edd4cc549d4ec0acc7550f7977e54d> ;
+    premis:size 458900 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/.mayaSwatches/060606_rgb_logo.mb.swatches" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/e64eec0a269e41e1/rr_45/i_1> .
+
+<https://dca.ethz.ch/id/e755d03ea1ca6e0f/rr_72/i_1#pid_b150827a93994e8683df0238ef9d3e59> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/e755d03ea1ca6e0f/rr_72/i_1> ;
+    rico:normalizedValue "CH-00000-0:58" .
+
+<https://dca.ethz.ch/id/e755d03ea1ca6e0f/rr_72/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/e755d03ea1ca6e0f/rr_72/i_1/b_1#fixity_ce847e5c06b144fe947f5e72c2fef75f> ;
+    premis:size 556967 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid01.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/e755d03ea1ca6e0f/rr_72/i_1> .
+
+<https://dca.ethz.ch/id/f1786550b59a1075/rr_86/i_1#pid_8dbc941de87b451ebcf5cb3665bc0280> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/f1786550b59a1075/rr_86/i_1> ;
+    rico:normalizedValue "CH-00000-0:71" .
+
+<https://dca.ethz.ch/id/f1786550b59a1075/rr_86/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/f1786550b59a1075/rr_86/i_1/b_1#fixity_c8ac19740c4d43e2b0d2c34330ec0431> ;
+    premis:size 799418 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid12.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/f1786550b59a1075/rr_86/i_1> .
+
+<https://dca.ethz.ch/id/f709c06c5eebd1e5/rr_31/i_1#pid_06ee8ff1bf8045a4a49dd2448e77bb6d> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/f709c06c5eebd1e5/rr_31/i_1> ;
+    rico:normalizedValue "CH-00000-0:19" .
+
+<https://dca.ethz.ch/id/f709c06c5eebd1e5/rr_31/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1168> ;
+    premis:fixity <https://dca.ethz.ch/id/f709c06c5eebd1e5/rr_31/i_1/b_1#fixity_09d02411ecc544ebaff796cf5f6da6c7> ;
+    premis:size 393344 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/.mayaSwatches/060606_force02.mb.swatches" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/f709c06c5eebd1e5/rr_31/i_1> .
+
+<https://dca.ethz.ch/id/f7457da700a748b5/rr_33/i_1#pid_ed747823a44245679ccd367cccc7b48c> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/f7457da700a748b5/rr_33/i_1> ;
+    rico:normalizedValue "CH-00000-0:21" .
+
+<https://dca.ethz.ch/id/f7457da700a748b5/rr_33/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1168> ;
+    premis:fixity <https://dca.ethz.ch/id/f7457da700a748b5/rr_33/i_1/b_1#fixity_58069c8d99a34a68ac52fe39a605d8cf> ;
+    premis:size 102551 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/.mayaSwatches/060606_rgb_fluid.mb.swatches" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/f7457da700a748b5/rr_33/i_1> .
+
+<https://dca.ethz.ch/id/f98f9aa9fdc16ca1/rr_67/i_1#pid_3b36a5d6aad24f10bc96131847a54a32> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/f98f9aa9fdc16ca1/rr_67/i_1> ;
+    rico:normalizedValue "CH-00000-0:53" .
+
+<https://dca.ethz.ch/id/f98f9aa9fdc16ca1/rr_67/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1169> ;
+    premis:fixity <https://dca.ethz.ch/id/f98f9aa9fdc16ca1/rr_67/i_1/b_1#fixity_78f27b58706940f8957ce33721ca6a69> ;
+    premis:size 12588 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/.mayaSwatches/trauben.jpg.swatch" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/f98f9aa9fdc16ca1/rr_67/i_1> .
+
+<https://dca.ethz.ch/id/fb5122b58a3c0ba2/rr_90/i_1#pid_a75c0a6fa513402492ca6d8a0ea4d5c5> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/fb5122b58a3c0ba2/rr_90/i_1> ;
+    rico:normalizedValue "CH-00000-0:75" .
+
+<https://dca.ethz.ch/id/fb5122b58a3c0ba2/rr_90/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/44> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/fb5122b58a3c0ba2/rr_90/i_1/b_1#fixity_c435dcfa9cce45aa84770df24cefa9db> ;
+    premis:size 571523 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/fluid16.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/fb5122b58a3c0ba2/rr_90/i_1> .
+
+<https://dca.ethz.ch/id/fc4d464366b7f24c/rr_93/i_1#pid_cd8cde7d1ff04f61bf3417de81d60649> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/fc4d464366b7f24c/rr_93/i_1> ;
+    rico:normalizedValue "CH-00000-0:78" .
+
+<https://dca.ethz.ch/id/fc4d464366b7f24c/rr_93/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/x-fmt/391> ;
+    ebucore:hasMimeType "image/jpeg" ;
+    premis:fixity <https://dca.ethz.ch/id/fc4d464366b7f24c/rr_93/i_1/b_1#fixity_53cb89155807473d9b08f71c15c5f445> ;
+    premis:size 658428 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/060606_maps/flüssigkeit/13050943_61113ac9b5_o.jpg" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/fc4d464366b7f24c/rr_93/i_1> .
+
+<https://dca.ethz.ch/id/fd8df6d317b14979/rr_29/i_1#pid_94aafb7e0a92452297e1a05404cb0d60> a rico:Identifier ;
+    schema1:position 1 ;
+    rico:hasIdentifierType <http://docuteam.ch/vocab/identifiertypes/pid> ;
+    rico:isOrWasIdentifierOf <https://dca.ethz.ch/id/fd8df6d317b14979/rr_29/i_1> ;
+    rico:normalizedValue "CH-00000-0:17" .
+
+<https://dca.ethz.ch/id/fd8df6d317b14979/rr_29/i_1/b_1> a premis:File ;
+    dcterms:format <https://www.nationalarchives.gov.uk/PRONOM/fmt/1168> ;
+    premis:fixity <https://dca.ethz.ch/id/fd8df6d317b14979/rr_29/i_1/b_1#fixity_c50f1e6ba21347b2be812d43befad12a> ;
+    premis:size 245891 ;
+    premis:storedAt "/home/renku/work/dcaonnextcloud-500gb/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/03_Plaene/01_dFab/060607_Fassadenstudie/.mayaSwatches/060606_3DModellWallsRGBRaw.mb.swatches" ;
+    rico:isOrWasComponentOf <https://dca.ethz.ch/id/fd8df6d317b14979/rr_29/i_1> .
+
+dca-id:rr_5 a rico:RecordResource,
+        rico:RecordSet ;
+    rico:isOrWasIncludedIn dca-id:rr_3 .
+
+<https://dca.ethz.ch/id/00e8a8e09bdde50c/rr_82> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_35 .
+
+<https://dca.ethz.ch/id/00e8a8e09bdde50c/rr_82/i_1/b_1#fixity_c3aba148b79c4fc191de1e450efeaea2> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "00e8a8e09bdde50c01db4bdf501a0375" .
+
+<https://dca.ethz.ch/id/0c5c5ffd1ba83473/rr_80> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_35 .
+
+<https://dca.ethz.ch/id/0c5c5ffd1ba83473/rr_80/i_1/b_1#fixity_cef499b04a644f6d997f9d7253dcc3b2> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "0c5c5ffd1ba83473cb080e2e83f35500" .
+
+<https://dca.ethz.ch/id/13adc07d038836bf/rr_47> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_18 .
+
+<https://dca.ethz.ch/id/13adc07d038836bf/rr_47/i_1/b_1#fixity_394045da23f348e98f28f25dfc9281b0> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "13adc07d038836bf32dd0f7d676151cb" .
+
+<https://dca.ethz.ch/id/161e546d72d31247/rr_40> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/161e546d72d31247/rr_40/i_1/b_1#fixity_0d491ec448a4474c82d4efe741a669f5> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "161e546d72d312478ab0bc8a31e3bf8a" .
+
+<https://dca.ethz.ch/id/1a7d709be37de98b/rr_20> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_8 .
+
+<https://dca.ethz.ch/id/1a7d709be37de98b/rr_20/i_1/b_1#fixity_564dde1d11d6496abeaf0c87cadb08d8> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "1a7d709be37de98bfac126009baa8958" .
+
+<https://dca.ethz.ch/id/1b356ec5b8f040b6/rr_58> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/1b356ec5b8f040b6/rr_58/i_1/b_1#fixity_5a474770ac39419b9c92a83f696fc72b> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "1b356ec5b8f040b6007cd5d84122baa1" .
+
+<https://dca.ethz.ch/id/1ded3b0faf9e1db4/rr_88> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_35 .
+
+<https://dca.ethz.ch/id/1ded3b0faf9e1db4/rr_88/i_1/b_1#fixity_de72e31f0b4f4232baf3449a22601093> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "1ded3b0faf9e1db489f619aff8b0c5d4" .
+
+<https://dca.ethz.ch/id/211d262a036df456/rr_53> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_15 .
+
+<https://dca.ethz.ch/id/211d262a036df456/rr_53/i_1/b_1#fixity_46c9c6edf35b461e969fa7eae94275b8> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "211d262a036df45690940abfb1425b9b" .
+
+<https://dca.ethz.ch/id/23d0e3b1f2bdd48a/rr_56> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/23d0e3b1f2bdd48a/rr_56/i_1/b_1#fixity_eb1c57c3d4984beebacc0399959e9fc5> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "23d0e3b1f2bdd48ae34890615a85c099" .
+
+<https://dca.ethz.ch/id/263a63ca0bd62edb/rr_70> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/263a63ca0bd62edb/rr_70/i_1/b_1#fixity_ad538b6995274e30a31e533bec199a0f> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "263a63ca0bd62edbd3820ffa43de5249" .
+
+<https://dca.ethz.ch/id/2da07ae0489e59ad/rr_69> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/2da07ae0489e59ad/rr_69/i_1/b_1#fixity_62cf031ced1043c099d9a58be83a595e> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "2da07ae0489e59adef6dbaf606c149cf" .
+
+<https://dca.ethz.ch/id/34877a6955052c66/rr_65> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/34877a6955052c66/rr_65/i_1/b_1#fixity_0fcde4c2a1054912bd4d3ddb3f9a1177> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "34877a6955052c669df5a5d18fcddea5" .
+
+<https://dca.ethz.ch/id/385f9e5bc7914ae2/rr_43> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/385f9e5bc7914ae2/rr_43/i_1/b_1#fixity_ec28814ff08c4cf4833af73680bd780b> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "385f9e5bc7914ae2efea5ef7b068321f" .
+
+<https://dca.ethz.ch/id/3eaf66ff7047f472/rr_71> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/3eaf66ff7047f472/rr_71/i_1/b_1#fixity_bf521c892f314ffa98dc137d15e9cc6f> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "3eaf66ff7047f472fb9d600313c10a58" .
+
+<https://dca.ethz.ch/id/3f327358b52be29e/rr_49> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_18 .
+
+<https://dca.ethz.ch/id/3f327358b52be29e/rr_49/i_1/b_1#fixity_cd87c4c5b063420cbd6f2a89bad17f5d> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "3f327358b52be29ee2bf336660c648b8" .
+
+<https://dca.ethz.ch/id/43950ae0719a9cdb/rr_79> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_35 .
+
+<https://dca.ethz.ch/id/43950ae0719a9cdb/rr_79/i_1/b_1#fixity_12e3b77f1c4547939a52eaf0ba8918ea> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "43950ae0719a9cdb1b9b3de6fc3cb53d" .
+
+<https://dca.ethz.ch/id/448eb9a6adb69948/rr_94> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_83 .
+
+<https://dca.ethz.ch/id/448eb9a6adb69948/rr_94/i_1/b_1#fixity_6a55575e72264161adfa444b1c8b80cc> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "448eb9a6adb699485a283e508eee3704" .
+
+<https://dca.ethz.ch/id/45de4e6040b646fe/rr_59> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_15 .
+
+<https://dca.ethz.ch/id/45de4e6040b646fe/rr_59/i_1/b_1#fixity_21e4a9e5b09a4c509f1efd58960a191a> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "45de4e6040b646fe4184c2937ea8dbef" .
+
+<https://dca.ethz.ch/id/463648928867250f/rr_100> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_83 .
+
+<https://dca.ethz.ch/id/463648928867250f/rr_100/i_1/b_1#fixity_b678a09729374dc8bd124bc817089439> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "463648928867250f808ed14f6759295e" .
+
+<https://dca.ethz.ch/id/49aa66a705c06f44/rr_84> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_83 .
+
+<https://dca.ethz.ch/id/49aa66a705c06f44/rr_84/i_1/b_1#fixity_80ac4d1bd0da44e5af385a88233d1593> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "49aa66a705c06f4402675cee954c9e19" .
+
+<https://dca.ethz.ch/id/4f08cfd14670b478/rr_81> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_35 .
+
+<https://dca.ethz.ch/id/4f08cfd14670b478/rr_81/i_1/b_1#fixity_5a2ac6d6a5c6434c8a4f89be51d65c87> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "4f08cfd14670b47856edb817a7d43381" .
+
+<https://dca.ethz.ch/id/514116060d8c31cb/rr_39> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/514116060d8c31cb/rr_39/i_1/b_1#fixity_77a07dbd29ca482e8557f622e2e95a01> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "514116060d8c31cb8919f22e5371db14" .
+
+<https://dca.ethz.ch/id/516dd4de2b4c4734/rr_77> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_35 .
+
+<https://dca.ethz.ch/id/516dd4de2b4c4734/rr_77/i_1/b_1#fixity_d5e2130babc04074bf97b8536a5db3d5> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "516dd4de2b4c473429791ee48063b7a0" .
+
+<https://dca.ethz.ch/id/551072f5cb6ec5ac/rr_52> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/551072f5cb6ec5ac/rr_52/i_1/b_1#fixity_9f56e319642b4668a7751106c1745cac> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "551072f5cb6ec5ac3fc501a4f79708b5" .
+
+<https://dca.ethz.ch/id/551f4a21c7326ade/rr_30> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_18 .
+
+<https://dca.ethz.ch/id/551f4a21c7326ade/rr_30/i_1/b_1#fixity_ab343e0ea4fb4a6798afa7cce3650d61> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "551f4a21c7326ade38495e1f7ea46843" .
+
+<https://dca.ethz.ch/id/55b0092e38104307/rr_54> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/55b0092e38104307/rr_54/i_1/b_1#fixity_fdd28d7f10104d8f9601839f8819615a> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "55b0092e38104307c8ef39ab854e2c6c" .
+
+<https://dca.ethz.ch/id/57a66595f3a1e965/rr_68> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/57a66595f3a1e965/rr_68/i_1/b_1#fixity_132a290f197a442390a5d657db9d99b6> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "57a66595f3a1e96523e84179f1404476" .
+
+<https://dca.ethz.ch/id/57c42c5ea73e020d/rr_27> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_7 .
+
+<https://dca.ethz.ch/id/57c42c5ea73e020d/rr_27/i_1/b_1#fixity_1f13d20735804453b28b6499ef1d5c45> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "57c42c5ea73e020d501787a930d57b17" .
+
+<https://dca.ethz.ch/id/5976345028d8bd9c/rr_37> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/5976345028d8bd9c/rr_37/i_1/b_1#fixity_39589a9e21e44c739d729592ec9faeda> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "5976345028d8bd9c5854d63775867d6a" .
+
+<https://dca.ethz.ch/id/5baf1fa6c931ce01/rr_92> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_83 .
+
+<https://dca.ethz.ch/id/5baf1fa6c931ce01/rr_92/i_1/b_1#fixity_23d5ceaecacd497589ac7e5b952b81e0> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "5baf1fa6c931ce0138f9b654f7bab431" .
+
+<https://dca.ethz.ch/id/5cf18026cf67bca8/rr_42> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/5cf18026cf67bca8/rr_42/i_1/b_1#fixity_171d48c00fc547cf9daef1423db62500> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "5cf18026cf67bca89d0ee12168ec8192" .
+
+<https://dca.ethz.ch/id/5e6306f4d763ec03/rr_14> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_12 .
+
+<https://dca.ethz.ch/id/5e6306f4d763ec03/rr_14/i_1/b_1#fixity_7062d4b636e74515bc5520e1a8e805dd> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "5e6306f4d763ec031127db689d5a4c2f" .
+
+<https://dca.ethz.ch/id/5f42b3d9c6c3260c/rr_78> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_35 .
+
+<https://dca.ethz.ch/id/5f42b3d9c6c3260c/rr_78/i_1/b_1#fixity_6caceeebde744363ba7183448ba059d5> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "5f42b3d9c6c3260cba643a48f0e36171" .
+
+<https://dca.ethz.ch/id/63c443e5c6ca6167/rr_51> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_15 .
+
+<https://dca.ethz.ch/id/63c443e5c6ca6167/rr_51/i_1/b_1#fixity_86c7e7489c3d43039dce04d3af055fbb> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "63c443e5c6ca616749701ffabc6a6e66" .
+
+<https://dca.ethz.ch/id/67737c939bc897c2/rr_75> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_35 .
+
+<https://dca.ethz.ch/id/67737c939bc897c2/rr_75/i_1/b_1#fixity_3cb5cfe4ce934b66ba87931278bce7f6> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "67737c939bc897c2e439ca39dd6632fd" .
+
+<https://dca.ethz.ch/id/69a6849cc44cfff8/rr_60> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_15 .
+
+<https://dca.ethz.ch/id/69a6849cc44cfff8/rr_60/i_1/b_1#fixity_7a2d0645f9104e018c4c9d70701e1e49> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "69a6849cc44cfff8ac3409aaff94b55d" .
+
+<https://dca.ethz.ch/id/69b11aa74d91ff03/rr_57> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_15 .
+
+<https://dca.ethz.ch/id/69b11aa74d91ff03/rr_57/i_1/b_1#fixity_3680da3208ec41089ebc63be1a374a82> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "69b11aa74d91ff0343fee0ba78a06752" .
+
+<https://dca.ethz.ch/id/6cb4db00fe911579/rr_62> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/6cb4db00fe911579/rr_62/i_1/b_1#fixity_6ce050a139a54c378fffe16ee24c3600> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "6cb4db00fe9115790c3aa4eae044551b" .
+
+<https://dca.ethz.ch/id/6f79289dc7f37536/rr_63> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/6f79289dc7f37536/rr_63/i_1/b_1#fixity_268b67198c464d9daee4058d9dea2067> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "6f79289dc7f3753671d666eddf1b1025" .
+
+<https://dca.ethz.ch/id/70216c498b4f95d7/rr_11> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_9 .
+
+<https://dca.ethz.ch/id/70216c498b4f95d7/rr_11/i_1/b_1#fixity_711c757a8c844e8abca15a64ed8d3d31> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "70216c498b4f95d7f01d62b1ffa3beef" .
+
+<https://dca.ethz.ch/id/71caab4b9eb51974/rr_25> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_12 .
+
+<https://dca.ethz.ch/id/71caab4b9eb51974/rr_25/i_1/b_1#fixity_187ada38e8164c2d86f0fb61bc2ee961> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "71caab4b9eb51974a5a734d8b5d2233e" .
+
+<https://dca.ethz.ch/id/71de0c0979c1f9a0/rr_97> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_83 .
+
+<https://dca.ethz.ch/id/71de0c0979c1f9a0/rr_97/i_1/b_1#fixity_83d74641346743b695e88dd08d72c460> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "71de0c0979c1f9a0f0a7994392d08a93" .
+
+<https://dca.ethz.ch/id/723f0fdc21589569/rr_28> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_18 .
+
+<https://dca.ethz.ch/id/723f0fdc21589569/rr_28/i_1/b_1#fixity_c2ad69daa16a4700810ba72736054510> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "723f0fdc21589569fb4af9062b2e0839" .
+
+<https://dca.ethz.ch/id/78e7f3578de7546a/rr_34> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_18 .
+
+<https://dca.ethz.ch/id/78e7f3578de7546a/rr_34/i_1/b_1#fixity_d0fdcef7582e4e4cac7c1844ef55c0b4> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "78e7f3578de7546a503959ec3680222a" .
+
+<https://dca.ethz.ch/id/82af7303086b295f/rr_76> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_35 .
+
+<https://dca.ethz.ch/id/82af7303086b295f/rr_76/i_1/b_1#fixity_7e274341f8b64e1b89155708c00a909c> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "82af7303086b295fc66cccf29fdffb16" .
+
+<https://dca.ethz.ch/id/8b6409b35cef56c8/rr_19> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_18 .
+
+<https://dca.ethz.ch/id/8b6409b35cef56c8/rr_19/i_1/b_1#fixity_6e9eb61030c14dc9a42c215fbab1fc8f> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "8b6409b35cef56c85956b1f7bc62d8d2" .
+
+<https://dca.ethz.ch/id/8e65c2f5e3ad059d/rr_26> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_7 .
+
+<https://dca.ethz.ch/id/8e65c2f5e3ad059d/rr_26/i_1/b_1#fixity_489dca8cc5bc461a8a8ee5fa8419e2f0> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "8e65c2f5e3ad059d4ae29f7ecf2509ac" .
+
+<https://dca.ethz.ch/id/906bd92cd6f9c0d9/rr_64> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/906bd92cd6f9c0d9/rr_64/i_1/b_1#fixity_b5dbfedb5e88405c9db89bf30addb92d> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "906bd92cd6f9c0d9977ad2f2b2fb14cc" .
+
+<https://dca.ethz.ch/id/91fb58064551dbfc/rr_73> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_35 .
+
+<https://dca.ethz.ch/id/91fb58064551dbfc/rr_73/i_1/b_1#fixity_cd7ed3bd2f084efa85247c415afefa87> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "91fb58064551dbfc06bee1b0188157d7" .
+
+<https://dca.ethz.ch/id/92f689711d6656ff/rr_21> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_8 .
+
+<https://dca.ethz.ch/id/92f689711d6656ff/rr_21/i_1/b_1#fixity_84ec7399aa71468cb48cc47cf60925c2> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "92f689711d6656ffe5cdca3535f086cb" .
+
+<https://dca.ethz.ch/id/9570ece8544715e3/rr_55> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_15 .
+
+<https://dca.ethz.ch/id/9570ece8544715e3/rr_55/i_1/b_1#fixity_f7f39f1fb01d420da1b15e827086b645> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "9570ece8544715e3f36f1ed5bd36400d" .
+
+<https://dca.ethz.ch/id/9a7f87cb51c935a0/rr_44> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/9a7f87cb51c935a0/rr_44/i_1/b_1#fixity_13b693c6fa824b019efdbbaf6c748fba> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "9a7f87cb51c935a068f8c6d42166df36" .
+
+<https://dca.ethz.ch/id/a14834e57eb0f2f8/rr_87> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_35 .
+
+<https://dca.ethz.ch/id/a14834e57eb0f2f8/rr_87/i_1/b_1#fixity_0bfe2d4a609749499c95959cd3914a3b> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "a14834e57eb0f2f8701d6757b31d7a06" .
+
+<https://dca.ethz.ch/id/a2899cedcb327df2/rr_95> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_83 .
+
+<https://dca.ethz.ch/id/a2899cedcb327df2/rr_95/i_1/b_1#fixity_fefa5a196372418d87dccf845fbf379f> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "a2899cedcb327df2f10a9fef2b87b683" .
+
+<https://dca.ethz.ch/id/aee76790a811b9c8/rr_50> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/aee76790a811b9c8/rr_50/i_1/b_1#fixity_dab98202fb50422a848da1f2af4d5185> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "aee76790a811b9c8b891f61ffd722f0c" .
+
+<https://dca.ethz.ch/id/b6ba3312cd5cc339/rr_85> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_83 .
+
+<https://dca.ethz.ch/id/b6ba3312cd5cc339/rr_85/i_1/b_1#fixity_5bc7032c77ec4c81af34f4e49c30f088> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "b6ba3312cd5cc339c784d8ab85ad6f8f" .
+
+<https://dca.ethz.ch/id/b807ac5488591c44/rr_38> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/b807ac5488591c44/rr_38/i_1/b_1#fixity_6efcd95733054dee8d204c377ae53723> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "b807ac5488591c44954d9d55bea262dc" .
+
+<https://dca.ethz.ch/id/b8aca8776a962a6b/rr_99> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_83 .
+
+<https://dca.ethz.ch/id/b8aca8776a962a6b/rr_99/i_1/b_1#fixity_7858d6806e3f424090a12351ef333df8> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "b8aca8776a962a6ba621d6d4360cdcf8" .
+
+<https://dca.ethz.ch/id/baaa48105d207c69/rr_66> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/baaa48105d207c69/rr_66/i_1/b_1#fixity_6f48b7dc757a4ef8b37f3ec0b1986241> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "baaa48105d207c6906fcf9463d86700f" .
+
+<https://dca.ethz.ch/id/bf7deb254c763e54/rr_16> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_12 .
+
+<https://dca.ethz.ch/id/bf7deb254c763e54/rr_16/i_1/b_1#fixity_4a542424ab8549819842ca4345166700> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "bf7deb254c763e546ae7ade6e1fe8741" .
+
+<https://dca.ethz.ch/id/c2cae6160089a0bc/rr_24> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_12 .
+
+<https://dca.ethz.ch/id/c2cae6160089a0bc/rr_24/i_1/b_1#fixity_b2fa8ddcaf3042c3bc2392488df82460> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "c2cae6160089a0bcddedf02651955cd9" .
+
+<https://dca.ethz.ch/id/c58c70ade2af4586/rr_41> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/c58c70ade2af4586/rr_41/i_1/b_1#fixity_f0e44749afbc49ce8074f2121c89aa28> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "c58c70ade2af45869b861f5bda04e9d2" .
+
+<https://dca.ethz.ch/id/c5bb5d0409f7afbd/rr_89> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_35 .
+
+<https://dca.ethz.ch/id/c5bb5d0409f7afbd/rr_89/i_1/b_1#fixity_2dbf50cc73df43b381cc10930863dd3d> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "c5bb5d0409f7afbd47bd8b43e3ddc6cd" .
+
+<https://dca.ethz.ch/id/cae5a835595b5cfd/rr_61> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/cae5a835595b5cfd/rr_61/i_1/b_1#fixity_be2c6f0c7251492e95cce8055241f2bb> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "cae5a835595b5cfd2e00a4c34e5aac08" .
+
+<https://dca.ethz.ch/id/cb6cfc0e23d304da/rr_46> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/cb6cfc0e23d304da/rr_46/i_1/b_1#fixity_89dddc28ef844c0094d2841e5a748f2a> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "cb6cfc0e23d304dac0e096a7cf5c4a50" .
+
+<https://dca.ethz.ch/id/cf3c5fc8c38d565c/rr_48> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/cf3c5fc8c38d565c/rr_48/i_1/b_1#fixity_c1fa55a0822f4f88b854b53b63157cf4> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "cf3c5fc8c38d565cf33a99f7484b2ee5" .
+
+<https://dca.ethz.ch/id/d255a22c76e933db/rr_13> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_12 .
+
+<https://dca.ethz.ch/id/d255a22c76e933db/rr_13/i_1/b_1#fixity_f6e8a8d9a87444f482500f17ed9f764c> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "d255a22c76e933db9da13a2a0254116b" .
+
+<https://dca.ethz.ch/id/d3613f6a61133562/rr_23> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_12 .
+
+<https://dca.ethz.ch/id/d3613f6a61133562/rr_23/i_1/b_1#fixity_8d426fe7be82420e85973daa3f70a3cd> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "d3613f6a611335628522d5155f1cc29c" .
+
+<https://dca.ethz.ch/id/d4bf2f289361359f/rr_96> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_83 .
+
+<https://dca.ethz.ch/id/d4bf2f289361359f/rr_96/i_1/b_1#fixity_89196d2aca73409b800a72e82af57266> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "d4bf2f289361359fb21598aea761d703" .
+
+<https://dca.ethz.ch/id/daf335498edf962e/rr_32> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_18 .
+
+<https://dca.ethz.ch/id/daf335498edf962e/rr_32/i_1/b_1#fixity_b135745dc5874c3fababf40ecd32771a> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "daf335498edf962ef517f54b3adeab6d" .
+
+<https://dca.ethz.ch/id/dc56a28ebb85ce00/rr_22> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_9 .
+
+<https://dca.ethz.ch/id/dc56a28ebb85ce00/rr_22/i_1/b_1#fixity_0faad0873c4f421a942a475501f52c46> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "dc56a28ebb85ce00dc6a67883fc9ea5c" .
+
+<https://dca.ethz.ch/id/de1492cca90347a7/rr_10> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_9 .
+
+<https://dca.ethz.ch/id/de1492cca90347a7/rr_10/i_1/b_1#fixity_afe6be54ce1446638194d56b1bfcf080> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "de1492cca90347a7db5514930c1e5b51" .
+
+<https://dca.ethz.ch/id/de7c5726621be932/rr_91> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_35 .
+
+<https://dca.ethz.ch/id/de7c5726621be932/rr_91/i_1/b_1#fixity_0eb28d4f2f56433e83ebc33a85f949ef> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "de7c5726621be93228566addc741b825" .
+
+<https://dca.ethz.ch/id/e03b6a208dbc7772/rr_74> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_35 .
+
+<https://dca.ethz.ch/id/e03b6a208dbc7772/rr_74/i_1/b_1#fixity_d5c224d64daa425aa124889143ae9ae2> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "e03b6a208dbc7772064f09ee7ba0f5cc" .
+
+<https://dca.ethz.ch/id/e3f51756ee3e552e/rr_17> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_7 .
+
+<https://dca.ethz.ch/id/e3f51756ee3e552e/rr_17/i_1/b_1#fixity_fb9fb88d364e4420bcd7d109140bb75b> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "e3f51756ee3e552e101c51cd97a89815" .
+
+<https://dca.ethz.ch/id/e50d626671172a1f/rr_98> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_83 .
+
+<https://dca.ethz.ch/id/e50d626671172a1f/rr_98/i_1/b_1#fixity_bf8386698ca048f6800dd01d0eb58322> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "e50d626671172a1fa0d0d2a0e9bf56bf" .
+
+<https://dca.ethz.ch/id/e64eec0a269e41e1/rr_45> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_18 .
+
+<https://dca.ethz.ch/id/e64eec0a269e41e1/rr_45/i_1/b_1#fixity_f7edd4cc549d4ec0acc7550f7977e54d> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "e64eec0a269e41e1d374790ddb10504f" .
+
+<https://dca.ethz.ch/id/e755d03ea1ca6e0f/rr_72> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_35 .
+
+<https://dca.ethz.ch/id/e755d03ea1ca6e0f/rr_72/i_1/b_1#fixity_ce847e5c06b144fe947f5e72c2fef75f> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "e755d03ea1ca6e0f401477ab549e8a2d" .
+
+<https://dca.ethz.ch/id/f1786550b59a1075/rr_86> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_35 .
+
+<https://dca.ethz.ch/id/f1786550b59a1075/rr_86/i_1/b_1#fixity_c8ac19740c4d43e2b0d2c34330ec0431> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "f1786550b59a107544d4c2f5891d1c57" .
+
+<https://dca.ethz.ch/id/f709c06c5eebd1e5/rr_31> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_18 .
+
+<https://dca.ethz.ch/id/f709c06c5eebd1e5/rr_31/i_1/b_1#fixity_09d02411ecc544ebaff796cf5f6da6c7> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "f709c06c5eebd1e5ac78120d4eefb58b" .
+
+<https://dca.ethz.ch/id/f7457da700a748b5/rr_33> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_18 .
+
+<https://dca.ethz.ch/id/f7457da700a748b5/rr_33/i_1/b_1#fixity_58069c8d99a34a68ac52fe39a605d8cf> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "f7457da700a748b5641d597638321819" .
+
+<https://dca.ethz.ch/id/f98f9aa9fdc16ca1/rr_67> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_36 .
+
+<https://dca.ethz.ch/id/f98f9aa9fdc16ca1/rr_67/i_1/b_1#fixity_78f27b58706940f8957ce33721ca6a69> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "f98f9aa9fdc16ca1c1d603cc108b6927" .
+
+<https://dca.ethz.ch/id/fb5122b58a3c0ba2/rr_90> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_35 .
+
+<https://dca.ethz.ch/id/fb5122b58a3c0ba2/rr_90/i_1/b_1#fixity_c435dcfa9cce45aa84770df24cefa9db> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "fb5122b58a3c0ba2514a96e4e6ca0481" .
+
+<https://dca.ethz.ch/id/fc4d464366b7f24c/rr_93> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_83 .
+
+<https://dca.ethz.ch/id/fc4d464366b7f24c/rr_93/i_1/b_1#fixity_53cb89155807473d9b08f71c15c5f445> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "fc4d464366b7f24c73f32c08e94c45e0" .
+
+<https://dca.ethz.ch/id/fd8df6d317b14979/rr_29> a rico:Record,
+        rico:RecordResource ;
+    rico:isOrWasIncludedIn dca-id:rr_18 .
+
+<https://dca.ethz.ch/id/fd8df6d317b14979/rr_29/i_1/b_1#fixity_c50f1e6ba21347b2be812d43befad12a> a <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5> ;
+    rdf:value "fd8df6d317b14979f541996b139bf7be" .
+
+dca-id:rr_1 a rico:RecordResource,
+        rico:RecordSet .
+
+dca-id:rr_6 a rico:RecordResource,
+        rico:RecordSet ;
+    rico:isOrWasIncludedIn dca-id:rr_3 .
+
+<https://dca.ethz.ch/id/00e8a8e09bdde50c/rr_82/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/00e8a8e09bdde50c/rr_82> ;
+    rico:name "fluid11.jpg" .
+
+<https://dca.ethz.ch/id/0c5c5ffd1ba83473/rr_80/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/0c5c5ffd1ba83473/rr_80> ;
+    rico:name "fluid09.jpg" .
+
+<https://dca.ethz.ch/id/13adc07d038836bf/rr_47/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/13adc07d038836bf/rr_47> ;
+    rico:name "060606_rgb_trauben.mb.swatches" .
+
+<https://dca.ethz.ch/id/161e546d72d31247/rr_40/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/161e546d72d31247/rr_40> ;
+    rico:name "fluid04.jpg.swatch" .
+
+<https://dca.ethz.ch/id/1a7d709be37de98b/rr_20/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/1a7d709be37de98b/rr_20> ;
+    rico:name "060403_Rotation_Test.dwg" .
+
+<https://dca.ethz.ch/id/1b356ec5b8f040b6/rr_58/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/1b356ec5b8f040b6/rr_58> ;
+    rico:name "fluid15.jpg.swatch" .
+
+<https://dca.ethz.ch/id/1ded3b0faf9e1db4/rr_88/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/1ded3b0faf9e1db4/rr_88> ;
+    rico:name "fluid14.jpg" .
+
+<https://dca.ethz.ch/id/211d262a036df456/rr_53/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/211d262a036df456/rr_53> ;
+    rico:name "060606_3DModellWallsForceRaw.mb" .
+
+<https://dca.ethz.ch/id/23d0e3b1f2bdd48a/rr_56/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/23d0e3b1f2bdd48a/rr_56> ;
+    rico:name "fluid14.jpg.swatch" .
+
+<https://dca.ethz.ch/id/263a63ca0bd62edb/rr_70/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/263a63ca0bd62edb/rr_70> ;
+    rico:name "trauben_logo.bmp.swatch" .
+
+<https://dca.ethz.ch/id/2da07ae0489e59ad/rr_69/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/2da07ae0489e59ad/rr_69> ;
+    rico:name "trauben_bw2.jpg.swatch" .
+
+<https://dca.ethz.ch/id/34877a6955052c66/rr_65/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/34877a6955052c66/rr_65> ;
+    rico:name "rendering.jpg.swatch" .
+
+<https://dca.ethz.ch/id/385f9e5bc7914ae2/rr_43/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/385f9e5bc7914ae2/rr_43> ;
+    rico:name "fluid07.jpg.swatch" .
+
+<https://dca.ethz.ch/id/3eaf66ff7047f472/rr_71/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/3eaf66ff7047f472/rr_71> ;
+    rico:name "trauben_quer_bw2.jpg.swatch" .
+
+<https://dca.ethz.ch/id/3f327358b52be29e/rr_49/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/3f327358b52be29e/rr_49> ;
+    rico:name "060606_rgb_trauben_logo.mb.swatches" .
+
+<https://dca.ethz.ch/id/43950ae0719a9cdb/rr_79/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/43950ae0719a9cdb/rr_79> ;
+    rico:name "fluid08.jpg" .
+
+<https://dca.ethz.ch/id/448eb9a6adb69948/rr_94/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/448eb9a6adb69948/rr_94> ;
+    rico:name "1336532.jpg" .
+
+<https://dca.ethz.ch/id/45de4e6040b646fe/rr_59/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/45de4e6040b646fe/rr_59> ;
+    rico:name "060606_force02.mb" .
+
+<https://dca.ethz.ch/id/463648928867250f/rr_100/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/463648928867250f/rr_100> ;
+    rico:name "Wasser-14.jpg" .
+
+<https://dca.ethz.ch/id/49aa66a705c06f44/rr_84/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/49aa66a705c06f44/rr_84> ;
+    rico:name "104380501_001519e5b8_b.jpg" .
+
+<https://dca.ethz.ch/id/4f08cfd14670b478/rr_81/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/4f08cfd14670b478/rr_81> ;
+    rico:name "fluid10.jpg" .
+
+<https://dca.ethz.ch/id/514116060d8c31cb/rr_39/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/514116060d8c31cb/rr_39> ;
+    rico:name "fluid03.jpg.swatch" .
+
+<https://dca.ethz.ch/id/516dd4de2b4c4734/rr_77/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/516dd4de2b4c4734/rr_77> ;
+    rico:name "fluid06.jpg" .
+
+<https://dca.ethz.ch/id/551072f5cb6ec5ac/rr_52/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/551072f5cb6ec5ac/rr_52> ;
+    rico:name "fluid12.jpg.swatch" .
+
+<https://dca.ethz.ch/id/551f4a21c7326ade/rr_30/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/551f4a21c7326ade/rr_30> ;
+    rico:name "060606_force01.mb.swatches" .
+
+<https://dca.ethz.ch/id/55b0092e38104307/rr_54/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/55b0092e38104307/rr_54> ;
+    rico:name "fluid13.jpg.swatch" .
+
+<https://dca.ethz.ch/id/57a66595f3a1e965/rr_68/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/57a66595f3a1e965/rr_68> ;
+    rico:name "trauben_bw.jpg.swatch" .
+
+<https://dca.ethz.ch/id/57c42c5ea73e020d/rr_27/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/57c42c5ea73e020d/rr_27> ;
+    rico:name "060530_Fassadenelemente.mcd" .
+
+<https://dca.ethz.ch/id/5976345028d8bd9c/rr_37/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/5976345028d8bd9c/rr_37> ;
+    rico:name "fluid01.jpg.swatch" .
+
+<https://dca.ethz.ch/id/5baf1fa6c931ce01/rr_92/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/5baf1fa6c931ce01/rr_92> ;
+    rico:name "13050856_7d7bbd180e_o.jpg" .
+
+<https://dca.ethz.ch/id/5cf18026cf67bca8/rr_42/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/5cf18026cf67bca8/rr_42> ;
+    rico:name "fluid06.jpg.swatch" .
+
+<https://dca.ethz.ch/id/5e6306f4d763ec03/rr_14/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/5e6306f4d763ec03/rr_14> ;
+    rico:name "testtexture.jpg" .
+
+<https://dca.ethz.ch/id/5f42b3d9c6c3260c/rr_78/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/5f42b3d9c6c3260c/rr_78> ;
+    rico:name "fluid07.jpg" .
+
+<https://dca.ethz.ch/id/63c443e5c6ca6167/rr_51/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/63c443e5c6ca6167/rr_51> ;
+    rico:name "060606_3DModellRaw.mb" .
+
+<https://dca.ethz.ch/id/67737c939bc897c2/rr_75/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/67737c939bc897c2/rr_75> ;
+    rico:name "fluid04.jpg" .
+
+<https://dca.ethz.ch/id/69a6849cc44cfff8/rr_60/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/69a6849cc44cfff8/rr_60> ;
+    rico:name "060606_force03.mb" .
+
+<https://dca.ethz.ch/id/69b11aa74d91ff03/rr_57/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/69b11aa74d91ff03/rr_57> ;
+    rico:name "060606_force01.mb" .
+
+<https://dca.ethz.ch/id/6cb4db00fe911579/rr_62/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/6cb4db00fe911579/rr_62> ;
+    rico:name "fluid17.jpg.swatch" .
+
+<https://dca.ethz.ch/id/6f79289dc7f37536/rr_63/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/6f79289dc7f37536/rr_63> ;
+    rico:name "logo.bmp.swatch" .
+
+<https://dca.ethz.ch/id/70216c498b4f95d7/rr_11/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/70216c498b4f95d7/rr_11> ;
+    rico:name "060419_plan1_v03.dwg" .
+
+<https://dca.ethz.ch/id/71caab4b9eb51974/rr_25/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/71caab4b9eb51974/rr_25> ;
+    rico:name "060419_Plan_2.pdf" .
+
+<https://dca.ethz.ch/id/71de0c0979c1f9a0/rr_97/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/71de0c0979c1f9a0/rr_97> ;
+    rico:name "45212468_469b1fbca3_o.jpg" .
+
+<https://dca.ethz.ch/id/723f0fdc21589569/rr_28/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/723f0fdc21589569/rr_28> ;
+    rico:name "060606_3DModellWallsForceRaw.mb.swatches" .
+
+<https://dca.ethz.ch/id/78e7f3578de7546a/rr_34/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/78e7f3578de7546a/rr_34> ;
+    rico:name "060606_rgb_spheres.mb.swatches" .
+
+<https://dca.ethz.ch/id/82af7303086b295f/rr_76/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/82af7303086b295f/rr_76> ;
+    rico:name "fluid05.jpg" .
+
+<https://dca.ethz.ch/id/8b6409b35cef56c8/rr_19/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/8b6409b35cef56c8/rr_19> ;
+    rico:name "060606_3DModellRaw.mb.swatches" .
+
+<https://dca.ethz.ch/id/8e65c2f5e3ad059d/rr_26/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/8e65c2f5e3ad059d/rr_26> ;
+    rico:name "060512_verband02.mcd" .
+
+<https://dca.ethz.ch/id/906bd92cd6f9c0d9/rr_64/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/906bd92cd6f9c0d9/rr_64> ;
+    rico:name "logo_raw_inv.bmp.swatch" .
+
+<https://dca.ethz.ch/id/91fb58064551dbfc/rr_73/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/91fb58064551dbfc/rr_73> ;
+    rico:name "fluid02.jpg" .
+
+<https://dca.ethz.ch/id/92f689711d6656ff/rr_21/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/92f689711d6656ff/rr_21> ;
+    rico:name "060405_Rotation_Test.dwg" .
+
+<https://dca.ethz.ch/id/9570ece8544715e3/rr_55/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/9570ece8544715e3/rr_55> ;
+    rico:name "060606_3DModellWallsRGBRaw.mb" .
+
+<https://dca.ethz.ch/id/9a7f87cb51c935a0/rr_44/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/9a7f87cb51c935a0/rr_44> ;
+    rico:name "fluid08.jpg.swatch" .
+
+<https://dca.ethz.ch/id/a14834e57eb0f2f8/rr_87/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/a14834e57eb0f2f8/rr_87> ;
+    rico:name "fluid13.jpg" .
+
+<https://dca.ethz.ch/id/a2899cedcb327df2/rr_95/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/a2899cedcb327df2/rr_95> ;
+    rico:name "19270523_7d76c4c9a7_o.jpg" .
+
+<https://dca.ethz.ch/id/aee76790a811b9c8/rr_50/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/aee76790a811b9c8/rr_50> ;
+    rico:name "fluid11.jpg.swatch" .
+
+<https://dca.ethz.ch/id/b6ba3312cd5cc339/rr_85/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/b6ba3312cd5cc339/rr_85> ;
+    rico:name "1601449.jpg" .
+
+<https://dca.ethz.ch/id/b807ac5488591c44/rr_38/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/b807ac5488591c44/rr_38> ;
+    rico:name "fluid02.jpg.swatch" .
+
+<https://dca.ethz.ch/id/b8aca8776a962a6b/rr_99/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/b8aca8776a962a6b/rr_99> ;
+    rico:name "Bewegte%20Wasser%201.jpg" .
+
+<https://dca.ethz.ch/id/baaa48105d207c69/rr_66/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/baaa48105d207c69/rr_66> ;
+    rico:name "rendering2.jpg.swatch" .
+
+<https://dca.ethz.ch/id/bf7deb254c763e54/rr_16/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/bf7deb254c763e54/rr_16> ;
+    rico:name "060418_Schliessvariante_3.33Seite_12Steine_28Lagen_working_Expression.dwg" .
+
+<https://dca.ethz.ch/id/c2cae6160089a0bc/rr_24/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/c2cae6160089a0bc/rr_24> ;
+    rico:name "060419_Plan_2.ai" .
+
+<https://dca.ethz.ch/id/c58c70ade2af4586/rr_41/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/c58c70ade2af4586/rr_41> ;
+    rico:name "fluid05.jpg.swatch" .
+
+<https://dca.ethz.ch/id/c5bb5d0409f7afbd/rr_89/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/c5bb5d0409f7afbd/rr_89> ;
+    rico:name "fluid15.jpg" .
+
+<https://dca.ethz.ch/id/cae5a835595b5cfd/rr_61/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/cae5a835595b5cfd/rr_61> ;
+    rico:name "fluid16.jpg.swatch" .
+
+<https://dca.ethz.ch/id/cb6cfc0e23d304da/rr_46/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/cb6cfc0e23d304da/rr_46> ;
+    rico:name "fluid09.jpg.swatch" .
+
+<https://dca.ethz.ch/id/cf3c5fc8c38d565c/rr_48/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/cf3c5fc8c38d565c/rr_48> ;
+    rico:name "fluid10.jpg.swatch" .
+
+<https://dca.ethz.ch/id/d255a22c76e933db/rr_13/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/d255a22c76e933db/rr_13> ;
+    rico:name "060418_Schliessvariante_3.33Seite_12Steine_28Lagen_working_Expression.bak" .
+
+<https://dca.ethz.ch/id/d3613f6a61133562/rr_23/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/d3613f6a61133562/rr_23> ;
+    rico:name "060418_Schliessvariante_3.33Seite_12Steine_28Lagen_working_Expression.5.psd" .
+
+<https://dca.ethz.ch/id/d4bf2f289361359f/rr_96/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/d4bf2f289361359f/rr_96> ;
+    rico:name "45212466_d66e219586_o.jpg" .
+
+<https://dca.ethz.ch/id/daf335498edf962e/rr_32/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/daf335498edf962e/rr_32> ;
+    rico:name "060606_force03.mb.swatches" .
+
+<https://dca.ethz.ch/id/dc56a28ebb85ce00/rr_22/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/dc56a28ebb85ce00/rr_22> ;
+    rico:name "060419_plan1_v03.pdf" .
+
+<https://dca.ethz.ch/id/de1492cca90347a7/rr_10/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/de1492cca90347a7/rr_10> ;
+    rico:name "060419_plan1_v03.bak" .
+
+<https://dca.ethz.ch/id/de7c5726621be932/rr_91/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/de7c5726621be932/rr_91> ;
+    rico:name "fluid17.jpg" .
+
+<https://dca.ethz.ch/id/e03b6a208dbc7772/rr_74/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/e03b6a208dbc7772/rr_74> ;
+    rico:name "fluid03.jpg" .
+
+<https://dca.ethz.ch/id/e3f51756ee3e552e/rr_17/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/e3f51756ee3e552e/rr_17> ;
+    rico:name "060405_Rotation_Test.dwg" .
+
+<https://dca.ethz.ch/id/e50d626671172a1f/rr_98/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/e50d626671172a1f/rr_98> ;
+    rico:name "5135722_4a3615080f_o.jpg" .
+
+<https://dca.ethz.ch/id/e64eec0a269e41e1/rr_45/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/e64eec0a269e41e1/rr_45> ;
+    rico:name "060606_rgb_logo.mb.swatches" .
+
+<https://dca.ethz.ch/id/e755d03ea1ca6e0f/rr_72/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/e755d03ea1ca6e0f/rr_72> ;
+    rico:name "fluid01.jpg" .
+
+<https://dca.ethz.ch/id/f1786550b59a1075/rr_86/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/f1786550b59a1075/rr_86> ;
+    rico:name "fluid12.jpg" .
+
+<https://dca.ethz.ch/id/f709c06c5eebd1e5/rr_31/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/f709c06c5eebd1e5/rr_31> ;
+    rico:name "060606_force02.mb.swatches" .
+
+<https://dca.ethz.ch/id/f7457da700a748b5/rr_33/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/f7457da700a748b5/rr_33> ;
+    rico:name "060606_rgb_fluid.mb.swatches" .
+
+<https://dca.ethz.ch/id/f98f9aa9fdc16ca1/rr_67/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/f98f9aa9fdc16ca1/rr_67> ;
+    rico:name "trauben.jpg.swatch" .
+
+<https://dca.ethz.ch/id/fb5122b58a3c0ba2/rr_90/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/fb5122b58a3c0ba2/rr_90> ;
+    rico:name "fluid16.jpg" .
+
+<https://dca.ethz.ch/id/fc4d464366b7f24c/rr_93/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/fc4d464366b7f24c/rr_93> ;
+    rico:name "13050943_61113ac9b5_o.jpg" .
+
+<https://dca.ethz.ch/id/fd8df6d317b14979/rr_29/i_1> a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory <http://docuteam.ch/vocab/instantiationcategory/file> ;
+    rico:isInstantiationOf <https://dca.ethz.ch/id/fd8df6d317b14979/rr_29> ;
+    rico:name "060606_3DModellWallsRGBRaw.mb.swatches" .
+
+dca-id:rr_3 a rico:RecordResource,
+        rico:RecordSet ;
+    rico:isOrWasIncludedIn dca-id:rr_1 .
+
+dca-id:rr_9 a rico:RecordResource,
+        rico:RecordSet ;
+    rico:isOrWasIncludedIn dca-id:rr_8 .
+
+dca-id:rr_8 a rico:RecordResource,
+        rico:RecordSet ;
+    rico:isOrWasIncludedIn dca-id:rr_7 .
+
+dca-id:rr_7 a rico:RecordResource,
+        rico:RecordSet ;
+    rico:isOrWasIncludedIn dca-id:rr_6 .
+
+dca-id:rr_12 a rico:RecordResource,
+        rico:RecordSet ;
+    rico:isOrWasIncludedIn dca-id:rr_8 .
+
+dca-id:rr_15 a rico:RecordResource,
+        rico:RecordSet ;
+    rico:isOrWasIncludedIn dca-id:rr_7 .
+
+dca-id:rr_18 a rico:RecordResource,
+        rico:RecordSet ;
+    rico:isOrWasIncludedIn dca-id:rr_15 .
+
+dca-id:rr_83 a rico:RecordResource,
+        rico:RecordSet ;
+    rico:isOrWasIncludedIn dca-id:rr_35 .
+
+dca-id:rr_35 a rico:RecordResource,
+        rico:RecordSet ;
+    rico:isOrWasIncludedIn dca-id:rr_15 .
+
+dca-id:rr_36 a rico:RecordResource,
+        rico:RecordSet ;
+    rico:isOrWasIncludedIn dca-id:rr_35 .
+

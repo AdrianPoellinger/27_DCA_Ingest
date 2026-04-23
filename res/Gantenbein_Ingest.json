@@ -1,0 +1,61 @@
+{
+  "archive": {
+    "name": "Digital Construction Archive",
+    "institution": {
+      "name": "ETH Zurich",
+      "identifier": "https://ror.org/05a28rw58"
+    }
+  },
+  "dataset": {
+    "project_name": "Weingut Gantenbein",
+    "project_identifier": "dca-weingut-gantenbein",
+    "is_part_of": "Digital Construction Archive"
+  },
+  "sources": [
+    {
+      "source_id": "gramazio-kohler-archiv-server",
+      "label": "Gramazio Kohler Archivserver",
+      "original_system": "File server",
+      "base_path": "WeingutGantenbein/gramazio-kohler-archiv-server/",
+      "description": "Projektablage der Gramazio Kohler Research Group zum Projekt Weingut Gantenbein",
+      "agents": {
+        "software": "DROID"
+      }
+    },
+    {
+      "source_id": "bearth-deplazes-server",
+      "label": "Bearth & Deplazes Server",
+      "original_system": "File server",
+      "base_path": "WeingutGantenbein/bearth-deplazes-server/",
+      "description": "Planungsunterlagen des Büris Bearth Deplazes zum Projekt Weingut Gantenbein",
+      "agents": {
+        "software": "DROID"
+      }
+    }
+  ],
+  "identifiers": {
+    "uri_base": "https://nextcloud.ethz.ch/remote.php/dav/files/padrian/DCA/DigitalMaterialCopies/",
+    "uri_policy": {
+      "dataset": "append_project_identifier",
+      "source": "append_source_id",
+      "object": "append_object_id",
+      "file": "append_relative_path"
+    }
+  },
+  "agents": {
+    "archivist": {
+      "type": "person",
+      "name": "Adrian Leander Pöllinger",
+      "identifier": "a.poellinger",
+      "role": "archival_processing"
+    }
+  },
+  "premis_defaults": {
+    "event_type": "ingestion",
+    "event_outcome": {
+      "label": "success",
+      "uri": "http://dca.ch/vocab/eventoutcomes/success"
+    },
+    "event_note_template": "Performed by: '{agent_identifier}'"
+  }
+}
