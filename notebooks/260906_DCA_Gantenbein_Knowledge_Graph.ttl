@@ -1,0 +1,76 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dca-ev: <https://konstruktionsarchiv.ethz.ch/event/> .
+@prefix dca-id: <https://konstruktionsarchiv.ethz.ch/id/> .
+@prefix dca-ins: <https://konstruktionsarchiv.ethz.ch/id/ifc_instance/> .
+@prefix dca-per: <https://konstruktionsarchiv.ethz.ch/person/> .
+@prefix dca-po: <https://konstruktionsarchiv.ethz.ch/physical_object/> .
+@prefix dca-pr: <https://dca.ethz.ch/procedure/> .
+@prefix docuteam: <http://docuteam.ch/vocab/instantiationcategory/> .
+@prefix ns1: <https://nextcloud.ethz.ch/remote.php/dav/files/padrian/DCA/DigitalMaterialCopies/WeingutGantenbein/gramazio-kohler-archiv-server/036_WeingutGantenbein/06_Produktion/02_Produktionsdaten/060715/> .
+@prefix premis: <http://www.loc.gov/premis/rdf/v3/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix wkd: <https://www.wikidata.org/wiki/> .
+
+dca-id:file_b_0001cc76920da0e1 a premis:File ;
+    premis:storedAt ns1:walls060715.dat ;
+    rico:isOrWasComponentOf dca-id:file_i_0001cc76920da0e1 .
+
+dca-id:file_b_00185cb196156490 a premis:File ;
+    premis:storedAt ns1:walls060715.src ;
+    rico:isOrWasComponentOf dca-id:file_i_00185cb196156490 .
+
+dca-po:GantenbeinVinery a crm:E22_Man-Made_Object ;
+    rdfs:label "Gantenbein Vinery"@en ;
+    crm:P108i_was_produced_by dca-ev:GantenbeinProduction ;
+    crm:P2_has_type aat:300004790 ;
+    crm:P46_is_composed_of dca-po:WallElement_Q_1_2 ;
+    crm:P50_has_current_keeper dca-per:Martha_und_Daniel_Gantenbein ;
+    crm:P94i_was_created_by wkd:Q1542045 .
+
+aat:300004790 rdfs:label "single built works"@en .
+
+aat:300104722 rdfs:label "faade component"@en .
+
+dca-pr:RoboticAssembly_060715 a crm:E29_Design_or_Procedure ;
+    crm:P70i_is_documented_in "xxx" .
+
+dca-ev:GantenbeinProduction a crm:E12_Production ;
+    crm:P9_consists_of dca-ev:GantenbeinProduction_060715 .
+
+dca-per:Martha_und_Daniel_Gantenbein rdfs:label "Martha und Daniel Gantenbein"@de .
+
+dca-per:Matthias_Kohler a dbo:Architect ;
+    rdfs:label "Matthias_Kohler"@en .
+
+dca-po:WallElement_Q_1_2 a crm:E22_Man-Made_Object ;
+    rdfs:label "Wall Element Q_1_2"@en ;
+    crm:P108i_was_produced_by dca-ev:GantenbeinProduction_060715 ;
+    crm:P138_has_representation dca-ins:0L2KFbBZj2SBH%24hNlrnmRY ;
+    crm:P2_has_type aat:300104722 .
+
+wkd:Q112479395 a dbo:Architect ;
+    rdfs:label "Fabio_Gramazio"@en .
+
+wkd:Q1542045 a dbo:company ;
+    rdfs:label "Gramazio_&_Kohler"@en ;
+    crm:P107_has_current_or_former_member dca-per:Matthias_Kohler,
+        wkd:Q112479395 .
+
+dca-ev:GantenbeinProduction_060715 a crm:E12_Production ;
+    crm:P16_used_specific_object dca-id:file_i_0001cc76920da0e1,
+        dca-id:file_i_00185cb196156490 ;
+    crm:P33_used_specific_technique dca-pr:RoboticAssembly_060715 .
+
+dca-id:file_i_0001cc76920da0e1 a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory docuteam:file ;
+    rico:name "walls060715.dat" .
+
+dca-id:file_i_00185cb196156490 a premis:Representation,
+        rico:Instantiation ;
+    rico:hasOrHadCategory docuteam:file ;
+    rico:name "walls060715.src" .
+
